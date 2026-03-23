@@ -30,15 +30,8 @@ import os
 from state import WaterSortState
 
 
-# ──────────────────────────────────────────────
-# Load
-# ──────────────────────────────────────────────
 
 def load_puzzle(filepath: str) -> WaterSortState:
-    """
-    Read a puzzle text file and return a WaterSortState.
-    Raises ValueError on bad format.
-    """
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"Puzzle file not found: {filepath}")
 
@@ -49,7 +42,6 @@ def load_puzzle(filepath: str) -> WaterSortState:
         for raw_line in f:
             line = raw_line.strip()
 
-            # Skip comments and blank lines between sections
             if not line or line.startswith("#"):
                 continue
 
@@ -83,14 +75,9 @@ def load_puzzle(filepath: str) -> WaterSortState:
     return WaterSortState(tubes, capacity)
 
 
-# ──────────────────────────────────────────────
 # Save puzzle (for creating new levels)
-# ──────────────────────────────────────────────
 
 def save_puzzle(state: WaterSortState, filepath: str, comment: str = "") -> None:
-    """
-    Write a WaterSortState to a text file in the standard format.
-    """
     os.makedirs(os.path.dirname(filepath), exist_ok=True) if os.path.dirname(filepath) else None
 
     with open(filepath, "w") as f:
@@ -106,9 +93,7 @@ def save_puzzle(state: WaterSortState, filepath: str, comment: str = "") -> None
     print(f"Puzzle saved to: {filepath}")
 
 
-# ──────────────────────────────────────────────
 # Save results (solution + stats)
-# ──────────────────────────────────────────────
 
 def save_results(
     filepath: str,
@@ -147,7 +132,6 @@ def save_results(
             f.write(f"  {key:<22}: {value}\n")
         f.write("\n")
 
-        # Solution
         if solution_moves:
             f.write(f"Solution ({len(solution_moves)} moves):\n")
             for step, (src, dst) in enumerate(solution_moves, 1):
@@ -158,9 +142,7 @@ def save_results(
     print(f"Results saved to: {filepath}")
 
 
-# ──────────────────────────────────────────────
 # List available puzzles
-# ──────────────────────────────────────────────
 
 def list_puzzles(folder: str = "puzzles") -> list[str]:
     """Return all .txt puzzle files in a folder."""
