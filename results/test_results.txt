@@ -1,0 +1,23 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/easy_1.txt
+Algorithm    : BFS
+
+Initial State:
+  Tube 0: red blue red blue
+  Tube 1: blue red blue red
+  Tube 2: (empty)
+  Tube 3: (empty)
+
+Performance:
+  time_seconds          : 0.004
+  states_explored       : 42
+  max_memory            : 2.1 MB
+  solution_length       : 3
+
+Solution (3 moves):
+  Step   1: Pour tube 0 → tube 2
+  Step   2: Pour tube 1 → tube 3
+  Step   3: Pour tube 0 → tube 2
