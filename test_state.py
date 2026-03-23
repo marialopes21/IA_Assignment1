@@ -13,9 +13,7 @@ def separator(title):
     print('─'*40)
 
 
-# ──────────────────────────────────────────────
 # TEST 1: Basic state creation & display
-# ──────────────────────────────────────────────
 separator("TEST 1: State creation")
 
 state = WaterSortState([
@@ -27,9 +25,7 @@ state = WaterSortState([
 state.display()
 
 
-# ──────────────────────────────────────────────
 # TEST 2: Tube queries
-# ──────────────────────────────────────────────
 separator("TEST 2: Tube queries")
 
 print(f"Tube 0 top      : {state.tube_top(0)}")           # blue
@@ -40,9 +36,7 @@ print(f"Tube 0 complete?: {state.is_tube_complete(0)}")   # False
 print(f"Tube 2 complete?: {state.is_tube_complete(2)}")   # True (empty = complete)
 
 
-# ──────────────────────────────────────────────
 # TEST 3: Valid moves
-# ──────────────────────────────────────────────
 separator("TEST 3: Valid moves")
 
 moves = state.get_valid_moves()
@@ -50,9 +44,7 @@ print(f"Valid moves: {moves}")
 # Tube 0 top = blue, Tube 1 top = red → they don't match, only empty tubes are valid dst
 
 
-# ──────────────────────────────────────────────
 # TEST 4: Apply a move
-# ──────────────────────────────────────────────
 separator("TEST 4: Apply move (tube 0 → tube 2)")
 
 new_state = state.apply_move(0, 2)
@@ -61,9 +53,7 @@ new_state.display()
 print(f"Original state unchanged? {state.tubes[0] == ('red', 'blue', 'red', 'blue')}")
 
 
-# ──────────────────────────────────────────────
 # TEST 5: Win detection
-# ──────────────────────────────────────────────
 separator("TEST 5: Win detection")
 
 winning_state = WaterSortState([
@@ -75,9 +65,7 @@ print(f"Winning state goal?: {winning_state.is_goal()}")   # True
 print(f"Normal state goal? : {state.is_goal()}")           # False
 
 
-# ──────────────────────────────────────────────
 # TEST 6: Hashing (for search visited sets)
-# ──────────────────────────────────────────────
 separator("TEST 6: Hashing")
 
 s1 = WaterSortState([['red', 'blue'], ['blue', 'red'], []])
@@ -89,9 +77,7 @@ print(f"s1 == s3: {s1 == s3}")   # False
 print(f"Can use in set: {len({s1, s2, s3}) == 2}")  # True
 
 
-# ──────────────────────────────────────────────
 # TEST 7: Load puzzle from file
-# ──────────────────────────────────────────────
 separator("TEST 7: Load puzzle from file")
 
 try:
@@ -102,9 +88,7 @@ except FileNotFoundError as e:
     print(f"File not found (run from water_sort/ directory): {e}")
 
 
-# ──────────────────────────────────────────────
 # TEST 8: Save puzzle & results
-# ──────────────────────────────────────────────
 separator("TEST 8: Save puzzle & results")
 
 save_puzzle(winning_state, "puzzles/test_output.txt", comment="Auto-generated test puzzle")
@@ -123,4 +107,4 @@ save_results(
     initial_state=state,
 )
 
-print("\n✅ All tests complete!")
+print("\n All tests complete!")
