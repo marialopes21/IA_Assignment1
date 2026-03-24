@@ -1,7 +1,3 @@
-"""
-test_search.py - Test all uninformed search algorithms
-Run with: python test_search.py
-"""
 
 from state import WaterSortState
 from search import bfs, dfs, iddfs, ucs, compare_algorithms

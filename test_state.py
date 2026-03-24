@@ -1,7 +1,4 @@
-"""
-test_state.py - Manual tests for state.py and puzzle_io.py
-Run with: python test_state.py
-"""
+
 
 from state import WaterSortState
 from puzzle_io import load_puzzle, save_puzzle, save_results
@@ -41,7 +38,6 @@ separator("TEST 3: Valid moves")
 
 moves = state.get_valid_moves()
 print(f"Valid moves: {moves}")
-# Tube 0 top = blue, Tube 1 top = red → they don't match, only empty tubes are valid dst
 
 
 # TEST 4: Apply a move

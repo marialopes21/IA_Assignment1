@@ -19,7 +19,7 @@ import heapq
 from state import WaterSortState
 
 
-# SearchResult — unified return type
+# SearchResult
 
 class SearchResult:
     def __init__(self, solution, states_explored, max_memory_kb, time_seconds, algorithm):
@@ -63,10 +63,6 @@ class SearchResult:
 # Internal helpers
 
 def _reconstruct_path(parent: dict, state: WaterSortState) -> list[tuple[int, int]]:
-    """
-    Walk back through the parent map to reconstruct the move sequence.
-    parent[state] = (previous_state, move_that_led_here)
-    """
     path = []
     while parent[state][0] is not None:
         prev_state, move = parent[state]
@@ -85,17 +81,15 @@ def _stop_tracking(start_time):
     elapsed = time.perf_counter() - start_time
     _, peak = tracemalloc.get_traced_memory()
     tracemalloc.stop()
-    return elapsed, peak / 1024  # bytes → KB
+    return elapsed, peak / 1024  
 
 
-# BFS — Breadth-First Search
+# BFS 
 
 def bfs(initial_state: WaterSortState) -> SearchResult:
     start_time = _start_tracking()
     states_explored = 0
 
-    # parent[state] = (parent_state, move)
-    # Root has no parent → (None, None)
     parent = {initial_state: (None, None)}
     queue = deque([initial_state])
 
@@ -123,13 +117,12 @@ def bfs(initial_state: WaterSortState) -> SearchResult:
     return SearchResult(None, states_explored, mem, elapsed, "BFS")
 
 
-# DFS — Depth-First Search
+# DFS
 
 def dfs(initial_state: WaterSortState, max_depth: int = 200) -> SearchResult:
     start_time = _start_tracking()
     states_explored = 0
 
-    # Stack entries: (state, path_of_moves_so_far, depth)
     stack = [(initial_state, [], 0)]
     visited = set()
 
@@ -157,7 +150,7 @@ def dfs(initial_state: WaterSortState, max_depth: int = 200) -> SearchResult:
     return SearchResult(None, states_explored, mem, elapsed, "DFS")
 
 
-# IDDFS — Iterative Deepening Depth-First Search
+# IDDFS
 
 def iddfs(initial_state: WaterSortState, max_depth: int = 200) -> SearchResult:
     start_time = _start_tracking()
@@ -171,7 +164,7 @@ def iddfs(initial_state: WaterSortState, max_depth: int = 200) -> SearchResult:
             return path
 
         if len(path) >= depth_limit:
-            return None  # cutoff
+            return None 
 
         for (src, dst) in state.get_valid_moves():
             next_state = state.apply_move(src, dst)
@@ -197,22 +190,20 @@ def iddfs(initial_state: WaterSortState, max_depth: int = 200) -> SearchResult:
     return SearchResult(None, total_states, mem, elapsed, "IDDFS")
 
 
-# UCS — Uniform Cost Search
+# UCS
 
 def ucs(initial_state: WaterSortState) -> SearchResult:
     start_time = _start_tracking()
     states_explored = 0
 
-    # Heap entries: (cumulative_cost, tie_breaker, state, path)
-    counter = 0  # tie-breaker to avoid comparing WaterSortState objects
+    counter = 0  
     heap = [(0, counter, initial_state, [])]
-    visited = {}  # state → best cost seen so far
+    visited = {} 
 
     while heap:
         cost, _, state, path = heapq.heappop(heap)
         states_explored += 1
 
-        # Skip if we've already found a cheaper path to this state
         if state in visited and visited[state] <= cost:
             continue
         visited[state] = cost
@@ -234,7 +225,6 @@ def ucs(initial_state: WaterSortState) -> SearchResult:
     return SearchResult(None, states_explored, mem, elapsed, "UCS")
 
 
-# Run all algorithms & compare
 
 def compare_algorithms(initial_state: WaterSortState) -> list[SearchResult]:
     print("Running all uninformed search algorithms...\n")
