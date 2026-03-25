@@ -1,0 +1,10 @@
+# Hard puzzle 3 - 6 colors, maximum mixing, capacity 4
+capacity=4
+red blue green yellow
+purple orange red blue
+green yellow purple orange
+blue green yellow red
+orange red blue purple
+yellow purple orange green
+empty
+empty

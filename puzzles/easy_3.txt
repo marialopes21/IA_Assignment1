@@ -1,0 +1,6 @@
+# Easy puzzle 3 - 3 colors, mostly separated
+capacity=4
+red red red blue
+blue blue blue green
+green green green red
+empty

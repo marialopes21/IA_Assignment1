@@ -1,0 +1,9 @@
+# Hard puzzle 1 - 5 colors, heavily mixed, capacity 4
+capacity=4
+red blue green yellow
+purple red blue green
+yellow purple red blue
+green yellow purple red
+blue green yellow purple
+empty
+empty

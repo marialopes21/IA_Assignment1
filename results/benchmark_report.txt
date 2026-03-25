@@ -1,0 +1,195 @@
+========================================================================
+  WATER SORT — ALGORITHM BENCHMARK REPORT
+========================================================================
+
+
+Puzzle: easy_1.txt
+────────────────────────────────────────────────────────────────────────
+Algorithm              Solved   Moves    States       Mem(KB)      Time(s)
+────────────────────────────────────────────────────────────────────────
+BFS                    Yes      7        206          68.14        0.0098
+DFS                    Yes      36       37           44.05        0.0019
+UCS                    Yes      7        488          140.36       0.0124
+Greedy (h1)            Yes      7        22           20.90        0.0014
+Greedy (h2)            Yes      7        86           72.66        0.0056
+Greedy (h3)            Yes      7        8            9.01         0.0008
+A* (h1)                Yes      7        103          46.22        0.0062
+A* (h2)                Yes      7        86           42.11        0.0049
+A* (h3)                Yes      7        18           15.78        0.0018
+WA* W=1.5 (h3)         Yes      7        8            9.31         0.0008
+WA* W=2.0 (h3)         Yes      7        8            9.29         0.0008
+
+  Fastest        : WA* W=2.0 (h3) (0.0008s)
+  Fewest states  : Greedy (h3) (8 states)
+  Best solution  : BFS (7 moves)
+
+
+Puzzle: easy_2.txt
+────────────────────────────────────────────────────────────────────────
+Algorithm              Solved   Moves    States       Mem(KB)      Time(s)
+────────────────────────────────────────────────────────────────────────
+BFS                    Yes      3        18           10.96        0.0008
+DFS                    Yes      9        10           9.45         0.0005
+UCS                    Yes      3        23           14.12        0.0013
+Greedy (h1)            Yes      3        4            4.03         0.0005
+Greedy (h2)            Yes      3        4            4.03         0.0002
+Greedy (h3)            Yes      3        4            4.12         0.0004
+A* (h1)                Yes      3        7            6.07         0.0004
+A* (h2)                Yes      3        4            4.20         0.0002
+A* (h3)                Yes      3        4            4.29         0.0004
+WA* W=1.5 (h3)         Yes      3        4            4.41         0.0004
+WA* W=2.0 (h3)         Yes      3        4            4.31         0.0004
+
+  Fastest        : A* (h2) (0.0002s)
+  Fewest states  : Greedy (h1) (4 states)
+  Best solution  : BFS (3 moves)
+
+
+Puzzle: easy_3.txt
+────────────────────────────────────────────────────────────────────────
+Algorithm              Solved   Moves    States       Mem(KB)      Time(s)
+────────────────────────────────────────────────────────────────────────
+BFS                    Yes      4        11           4.76         0.0003
+DFS                    Yes      4        5            3.11         0.0001
+UCS                    Yes      4        11           4.46         0.0003
+Greedy (h1)            Yes      4        5            3.05         0.0002
+Greedy (h2)            Yes      4        5            3.05         0.0002
+Greedy (h3)            Yes      4        5            3.05         0.0003
+A* (h1)                Yes      4        9            3.77         0.0003
+A* (h2)                Yes      4        5            2.81         0.0002
+A* (h3)                Yes      4        5            3.09         0.0003
+WA* W=1.5 (h3)         Yes      4        5            3.19         0.0003
+WA* W=2.0 (h3)         Yes      4        5            3.09         0.0003
+
+  Fastest        : DFS (0.0001s)
+  Fewest states  : DFS (5 states)
+  Best solution  : BFS (4 moves)
+
+
+Puzzle: hard_1.txt
+────────────────────────────────────────────────────────────────────────
+Algorithm              Solved   Moves    States       Mem(KB)      Time(s)
+────────────────────────────────────────────────────────────────────────
+BFS                    Yes      16       29128        32255.05     2.2991
+DFS                    Yes      200      489          1219.20      0.0319
+UCS                    Yes      16       60821        48789.20     3.2508
+Greedy (h1)            Yes      16       109          262.18       0.0185
+Greedy (h2)            Yes      17       1474         2000.38      0.1565
+Greedy (h3)            Yes      16       17           34.23        0.0044
+A* (h1)                Yes      16       4035         5464.80      0.3821
+A* (h2)                Yes      17       1474         1219.62      0.1748
+A* (h3)                Yes      16       17           37.80        0.0048
+WA* W=1.5 (h3)         Yes      16       17           39.89        0.0048
+WA* W=2.0 (h3)         Yes      16       17           37.73        0.0048
+
+  Fastest        : Greedy (h3) (0.0044s)
+  Fewest states  : Greedy (h3) (17 states)
+  Best solution  : BFS (16 moves)
+
+
+Puzzle: hard_2.txt
+────────────────────────────────────────────────────────────────────────
+Algorithm              Solved   Moves    States       Mem(KB)      Time(s)
+────────────────────────────────────────────────────────────────────────
+BFS                    Yes      16       29128        32247.27     2.7134
+DFS                    Yes      200      489          1219.20      0.0329
+UCS                    Yes      16       60821        48772.42     2.8445
+Greedy (h1)            Yes      16       109          262.18       0.0184
+Greedy (h2)            Yes      17       1474         2000.38      0.1568
+Greedy (h3)            Yes      16       17           34.23        0.0044
+A* (h1)                Yes      16       4035         5656.46      0.3957
+A* (h2)                Yes      17       1474         1219.62      0.1252
+A* (h3)                Yes      16       17           37.91        0.0043
+WA* W=1.5 (h3)         Yes      16       17           39.89        0.0047
+WA* W=2.0 (h3)         Yes      16       17           37.73        0.0043
+
+  Fastest        : WA* W=2.0 (h3) (0.0043s)
+  Fewest states  : Greedy (h3) (17 states)
+  Best solution  : BFS (16 moves)
+
+
+Puzzle: hard_3.txt
+────────────────────────────────────────────────────────────────────────
+Algorithm              Solved   Moves    States       Mem(KB)      Time(s)
+────────────────────────────────────────────────────────────────────────
+BFS                    Yes      19       123563       162787.67    10.8998
+DFS                    Yes      184      185          751.16       0.0211
+UCS                    Yes      19       232584       236087.29    13.4268
+Greedy (h1)            Yes      19       154          655.64       0.0315
+Greedy (h2)            Yes      20       2150         3217.27      0.2289
+Greedy (h3)            Yes      19       20           49.30        0.0063
+A* (h1)                Yes      19       11342        17851.59     1.1986
+A* (h2)                Yes      20       2150         2197.88      0.1987
+A* (h3)                Yes      19       20           51.48        0.0063
+WA* W=1.5 (h3)         Yes      19       20           54.23        0.0072
+WA* W=2.0 (h3)         Yes      19       20           51.91        0.0064
+
+  Fastest        : Greedy (h3) (0.0063s)
+  Fewest states  : Greedy (h3) (20 states)
+  Best solution  : BFS (19 moves)
+
+
+Puzzle: medium_1.txt
+────────────────────────────────────────────────────────────────────────
+Algorithm              Solved   Moves    States       Mem(KB)      Time(s)
+────────────────────────────────────────────────────────────────────────
+BFS                    Yes      10       1516         723.84       0.0887
+DFS                    Yes      79       80           140.16       0.0051
+UCS                    Yes      10       3527         1279.47      0.1068
+Greedy (h1)            Yes      10       43           47.52        0.0039
+Greedy (h2)            Yes      11       350          258.09       0.0274
+Greedy (h3)            Yes      11       12           13.98        0.0015
+A* (h1)                Yes      10       437          248.31       0.0302
+A* (h2)                Yes      11       350          174.04       0.0234
+A* (h3)                Yes      11       35           33.73        0.0037
+WA* W=1.5 (h3)         Yes      11       12           15.09        0.0015
+WA* W=2.0 (h3)         Yes      11       12           15.09        0.0015
+
+  Fastest        : Greedy (h3) (0.0015s)
+  Fewest states  : Greedy (h3) (12 states)
+  Best solution  : BFS (10 moves)
+
+
+Puzzle: medium_2.txt
+────────────────────────────────────────────────────────────────────────
+Algorithm              Solved   Moves    States       Mem(KB)      Time(s)
+────────────────────────────────────────────────────────────────────────
+BFS                    Yes      13       7665         6736.34      0.5182
+DFS                    Yes      140      141          428.62       0.0123
+UCS                    Yes      13       16982        10217.62     0.6455
+Greedy (h1)            Yes      13       98           154.62       0.0120
+Greedy (h2)            Yes      14       784          829.11       0.0709
+Greedy (h3)            Yes      13       14           23.94        0.0027
+A* (h1)                Yes      13       1459         1493.43      0.1228
+A* (h2)                Yes      14       784          431.94       0.0606
+A* (h3)                Yes      13       14           25.05        0.0028
+WA* W=1.5 (h3)         Yes      13       14           26.52        0.0029
+WA* W=2.0 (h3)         Yes      13       14           24.99        0.0028
+
+  Fastest        : Greedy (h3) (0.0027s)
+  Fewest states  : Greedy (h3) (14 states)
+  Best solution  : BFS (13 moves)
+
+
+Puzzle: medium_3.txt
+────────────────────────────────────────────────────────────────────────
+Algorithm              Solved   Moves    States       Mem(KB)      Time(s)
+────────────────────────────────────────────────────────────────────────
+BFS                    Yes      13       7656         6571.96      0.5227
+DFS                    Yes      165      166          585.56       0.0145
+UCS                    Yes      13       17093        10302.99     0.6503
+Greedy (h1)            Yes      13       68           100.98       0.0082
+Greedy (h2)            Yes      14       727          843.30       0.0658
+Greedy (h3)            Yes      13       14           23.55        0.0027
+A* (h1)                Yes      13       1441         1369.19      0.1197
+A* (h2)                Yes      14       727          431.24       0.0569
+A* (h3)                Yes      13       14           24.76        0.0028
+WA* W=1.5 (h3)         Yes      13       14           26.20        0.0029
+WA* W=2.0 (h3)         Yes      13       14           24.70        0.0029
+
+  Fastest        : Greedy (h3) (0.0027s)
+  Fewest states  : Greedy (h3) (14 states)
+  Best solution  : BFS (13 moves)
+
+========================================================================
+END OF REPORT

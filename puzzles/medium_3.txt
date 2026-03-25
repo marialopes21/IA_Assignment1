@@ -1,0 +1,8 @@
+# Medium puzzle 3 - 4 colors, different arrangement
+capacity=4
+blue yellow red green
+red blue yellow green
+green red blue yellow
+yellow green red blue
+empty
+empty
