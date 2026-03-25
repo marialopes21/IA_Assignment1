@@ -38,7 +38,7 @@ SLOW_ALGORITHMS = {"IDDFS"}
 
 def run_algorithm(name: str, fn, state: WaterSortState, skip_slow=False) -> SearchResult | None:
     if skip_slow and name in SLOW_ALGORITHMS:
-        print(f"  [{name}] ⏭  Skipped (too slow for this puzzle size)")
+        print(f"  [{name}]  Skipped (too slow for this puzzle size)")
         return None
 
     print(f"  [{name}] Running...", end="\r")
@@ -128,7 +128,6 @@ def save_report(
     with open(output_path, "w") as f:
         f.write("=" * 72 + "\n")
         f.write("  WATER SORT — ALGORITHM BENCHMARK REPORT\n")
-        f.write(f"  Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
         f.write("=" * 72 + "\n\n")
 
         for puzzle_name, results in results_by_puzzle.items():

@@ -81,7 +81,7 @@ try:
     print("Loaded puzzle:")
     loaded.display()
 except FileNotFoundError as e:
-    print(f"File not found (run from water_sort/ directory): {e}")
+    print(f"File not found : {e}")
 
 
 # TEST 8: Save puzzle & results
