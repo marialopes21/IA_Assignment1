@@ -1,0 +1,13 @@
+# Hard puzzle 10 - 9 colors, deep cyclic interlocking
+capacity=4
+red blue red blue
+green yellow green yellow
+purple orange purple orange
+cyan pink cyan pink
+lime red lime red
+blue green blue green
+yellow purple yellow purple
+orange cyan orange cyan
+pink lime pink lime
+empty
+empty

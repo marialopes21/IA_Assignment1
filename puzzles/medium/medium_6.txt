@@ -1,0 +1,10 @@
+# Medium puzzle 6 - 6 colors, more interleaving
+capacity=4
+red blue green red
+yellow purple blue yellow
+green orange red green
+blue yellow purple blue
+orange green yellow orange
+purple red orange purple
+empty
+empty

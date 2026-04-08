@@ -1,0 +1,10 @@
+# Medium puzzle 5 - 6 colors, 8 tubes
+capacity=4
+red blue green yellow
+blue red purple orange
+green yellow red blue
+purple orange yellow green
+orange purple blue red
+yellow green orange purple
+empty
+empty

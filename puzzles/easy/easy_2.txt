@@ -1,0 +1,6 @@
+# Easy puzzle 2 - 2 colors, simple separation needed
+capacity=4
+red red blue blue
+blue blue red red
+empty
+empty

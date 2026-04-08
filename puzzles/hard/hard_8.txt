@@ -1,0 +1,12 @@
+# Hard puzzle 8 - 8 colors, alternating traps, 2 empty tubes
+capacity=4
+red blue red blue
+green yellow green yellow
+purple orange purple orange
+cyan pink cyan pink
+blue green blue green
+yellow purple yellow purple
+orange cyan orange cyan
+pink red pink red
+empty
+empty

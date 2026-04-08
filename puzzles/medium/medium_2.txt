@@ -1,0 +1,8 @@
+# Medium puzzle 2 - 4 colors, moderately mixed
+capacity=4
+red green blue yellow
+yellow blue green red
+green yellow red blue
+blue red yellow green
+empty
+empty

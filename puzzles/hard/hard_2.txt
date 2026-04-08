@@ -1,0 +1,12 @@
+# Hard puzzle 13 - 8 colors, alternating trap structure
+capacity=4
+red blue red blue
+green yellow green yellow
+purple orange purple orange
+cyan pink cyan pink
+blue green blue green
+yellow purple yellow purple
+orange cyan orange cyan
+pink red pink red
+empty
+empty

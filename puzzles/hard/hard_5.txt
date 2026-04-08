@@ -1,0 +1,12 @@
+# Hard puzzle 5 - 8 colors, 10 tubes, capacity 4
+capacity=4
+red blue green yellow
+purple orange cyan pink
+blue green yellow purple
+orange cyan pink red
+green yellow purple orange
+cyan pink red blue
+yellow purple orange cyan
+pink red blue green
+empty
+empty

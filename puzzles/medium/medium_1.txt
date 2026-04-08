@@ -1,0 +1,7 @@
+# Medium puzzle - 3 colors, 5 tubes (2 empty)
+capacity=4
+red blue green red
+blue green red blue
+green red blue green
+empty
+empty

@@ -1,0 +1,7 @@
+# Easy puzzle 4 - 3 colors, light mixing
+capacity=4
+red blue blue red
+blue red red blue
+green green green green
+empty
+empty

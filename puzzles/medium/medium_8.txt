@@ -1,0 +1,9 @@
+# Hard puzzle 2 - 5 colors, different arrangement, capacity 4
+capacity=4
+purple green red blue
+yellow purple green red
+blue yellow purple green
+red blue yellow purple
+green red blue yellow
+empty
+empty

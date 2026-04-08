@@ -1,0 +1,8 @@
+# Easy puzzle 6 - 4 colors, slightly more mixed
+capacity=4
+red blue green red
+blue red red blue
+green yellow yellow green
+yellow blue green yellow
+empty
+empty

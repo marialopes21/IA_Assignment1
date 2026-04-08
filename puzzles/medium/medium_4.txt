@@ -1,0 +1,9 @@
+# Medium puzzle 4 - 5 colors, moderate mixing
+capacity=4
+red blue green red
+blue yellow red blue
+green purple yellow green
+yellow red purple yellow
+purple green blue purple
+empty
+empty

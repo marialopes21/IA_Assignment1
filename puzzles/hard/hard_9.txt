@@ -1,0 +1,12 @@
+# Hard puzzle 9 - 8 colors, deceptive layered crossings
+capacity=4
+red blue green red
+blue yellow purple blue
+green orange cyan green
+yellow pink red yellow
+purple red blue purple
+orange green yellow orange
+cyan purple orange cyan
+pink cyan pink pink
+empty
+empty

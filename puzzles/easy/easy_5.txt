@@ -1,0 +1,8 @@
+# Easy puzzle 5 - 4 colors, simple separation
+capacity=4
+red blue blue red
+green yellow yellow green
+blue red red blue
+yellow green green yellow
+empty
+empty
