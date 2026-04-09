@@ -1,0 +1,11 @@
+# Medium puzzle 11 - 7 colors, moderate branching
+capacity=4
+red blue green orange
+blue green yellow cyan
+green yellow purple red
+yellow purple orange blue
+purple orange cyan green
+orange cyan red yellow
+cyan red blue purple
+empty
+empty

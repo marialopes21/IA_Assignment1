@@ -1,0 +1,8 @@
+# Easy puzzle 12 - 4 colors, simpler layering
+capacity=4
+red red blue green
+blue blue green yellow
+green green yellow red
+yellow yellow red blue
+empty
+empty

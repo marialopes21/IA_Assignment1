@@ -1,0 +1,8 @@
+# Easy puzzle 11 - 4 colors, mild trap
+capacity=4
+red blue red yellow
+blue green yellow red
+green yellow green blue
+yellow red blue green
+empty
+empty

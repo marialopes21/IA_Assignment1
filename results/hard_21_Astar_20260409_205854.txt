@@ -1,0 +1,26 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/hard/hard_21.txt
+Algorithm    : A*
+
+Initial State:
+  Tube 0: red blue green yellow purple orange
+  Tube 1: cyan pink lime red blue green
+  Tube 2: yellow purple orange cyan pink lime
+  Tube 3: red blue green yellow purple orange
+  Tube 4: cyan pink lime red blue green
+  Tube 5: yellow purple orange cyan pink lime
+  Tube 6: (empty)
+  Tube 7: (empty)
+  Tube 8: (empty)
+
+Performance:
+  time_seconds          : 3.9787822090000304
+  states_explored       : 25528
+  max_memory_kb         : 10687.640625
+  solution_length       : 0
+  solved                : False
+
+No solution found.

@@ -1,0 +1,6 @@
+# Easy puzzle 23 - capacity 4, 2 colors, nearly grouped
+capacity=4
+red red blue blue
+blue blue red red
+empty
+empty

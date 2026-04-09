@@ -1,0 +1,7 @@
+# Easy puzzle 8 - 3 colors, lighter mixing
+capacity=4
+red blue red green
+blue green blue red
+green red green blue
+empty
+empty

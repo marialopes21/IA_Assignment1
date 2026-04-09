@@ -1,0 +1,16 @@
+# Hard puzzle 25 - 12 colors, very complex
+capacity=4
+red blue green yellow
+purple orange cyan pink
+lime teal maroon gold
+blue green yellow purple
+orange cyan pink lime
+teal maroon gold red
+green yellow purple orange
+cyan pink lime teal
+maroon gold red blue
+yellow purple orange cyan
+pink lime teal maroon
+gold red blue green
+empty
+empty

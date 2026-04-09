@@ -1,0 +1,9 @@
+# Medium puzzle 10 - medium, capacity 5, 5 colors
+capacity=5
+red blue green yellow purple
+blue green yellow purple red
+green yellow purple red blue
+yellow purple red blue green
+purple red blue green yellow
+empty
+empty

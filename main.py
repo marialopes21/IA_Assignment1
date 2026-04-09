@@ -198,6 +198,8 @@ def main() -> None:
 
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                 if app_state == "game":
+                    if game_ui is not None:
+                        game_ui.close()
                     app_state = "main_menu"
                     game_ui = None
                     current_difficulty = None
@@ -229,7 +231,11 @@ def main() -> None:
                                 try:
                                     current_difficulty = button.action
                                     state, chosen_file = get_random_puzzle_from_difficulty(current_difficulty)
-                                    game_ui = WaterSortUI(screen, state)
+
+                                    if game_ui is not None:
+                                        game_ui.close()
+
+                                    game_ui = WaterSortUI(screen, state, puzzle_file=chosen_file)
                                     app_state = "game"
                                     error_message = ""
                                     pygame.display.set_caption(
@@ -249,6 +255,7 @@ def main() -> None:
 
             if game_ui.pending_action == "main_menu":
                 game_ui.pending_action = None
+                game_ui.close()
                 app_state = "main_menu"
                 game_ui = None
                 current_difficulty = None
@@ -259,13 +266,18 @@ def main() -> None:
                 try:
                     if current_difficulty is None:
                         raise ValueError("Current difficulty is unknown.")
+
+                    game_ui.close()
+
                     state, chosen_file = get_random_puzzle_from_difficulty(current_difficulty)
-                    game_ui = WaterSortUI(screen, state)
+                    game_ui = WaterSortUI(screen, state, puzzle_file=chosen_file)
                     pygame.display.set_caption(
                         f"Water Sort Puzzle - {current_difficulty.capitalize()} - {os.path.basename(chosen_file)}"
                     )
                 except Exception as e:
                     error_message = str(e)
+                    if game_ui is not None:
+                        game_ui.close()
                     app_state = "difficulty_menu"
                     game_ui = None
 
@@ -281,6 +293,9 @@ def main() -> None:
                 draw_error_overlay(screen, main_font, small_font, error_message)
 
         pygame.display.flip()
+
+    if game_ui is not None:
+        game_ui.close()
 
     pygame.quit()
     sys.exit()

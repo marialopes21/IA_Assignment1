@@ -1,0 +1,6 @@
+# Easy puzzle 25 - capacity 3, 2 colors
+capacity=3
+red blue red
+blue red blue
+empty
+empty

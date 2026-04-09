@@ -1,0 +1,8 @@
+# Hard puzzle 23 - capacity 8, 8 colors
+capacity=8
+red blue green yellow purple orange cyan pink
+red blue green yellow purple orange cyan pink
+red blue green yellow purple orange cyan pink
+red blue green yellow purple orange cyan pink
+empty
+empty

@@ -1,13 +1,17 @@
 from __future__ import annotations
 
 import math
+import os
 import time
-from concurrent.futures import ThreadPoolExecutor, Future
+from datetime import datetime
+from concurrent.futures import ProcessPoolExecutor, Future
 import pygame
 
 from state import WaterSortState
+from search import bfs, dfs, iddfs, ucs
 from search_heuristic import greedy, astar, weighted_astar
 from heuristics import h3_combined
+from puzzle_io import save_results
 
 
 SCREEN_WIDTH = 1400
@@ -104,9 +108,25 @@ def get_color_runs(tube: tuple[str, ...] | list[str]) -> list[tuple[str, int, in
 
 def _run_solver_job(job_kind: str, state: WaterSortState):
     """
-    Runs in a worker thread.
-    Returns a dict so the UI can handle all solver kinds consistently.
+    Runs in a separate process.
+    Must stay top-level to be pickleable.
     """
+    if job_kind == "solve_bfs":
+        result = bfs(state)
+        return {"kind": job_kind, "label": "BFS", "result": result}
+
+    if job_kind == "solve_dfs":
+        result = dfs(state)
+        return {"kind": job_kind, "label": "DFS", "result": result}
+
+    if job_kind == "solve_iddfs":
+        result = iddfs(state)
+        return {"kind": job_kind, "label": "IDDFS", "result": result}
+
+    if job_kind == "solve_ucs":
+        result = ucs(state)
+        return {"kind": job_kind, "label": "UCS", "result": result}
+
     if job_kind == "solve_greedy":
         result = greedy(state, h3_combined)
         return {"kind": job_kind, "label": "Greedy", "result": result}
@@ -172,10 +192,18 @@ class Button:
 
 
 class WaterSortUI:
-    def __init__(self, screen: pygame.Surface, initial_state: WaterSortState):
+    def __init__(
+        self,
+        screen: pygame.Surface,
+        initial_state: WaterSortState,
+        puzzle_file: str = "unknown_puzzle.txt",
+        results_folder: str = "results",
+    ):
         self.screen = screen
         self.initial_state = initial_state
         self.state = initial_state
+        self.puzzle_file = puzzle_file
+        self.results_folder = results_folder
 
         self.history: list[WaterSortState] = [initial_state]
         self.selected_tube: int | None = None
@@ -188,21 +216,75 @@ class WaterSortUI:
         self.tube_rects: list[pygame.Rect] = []
         self.buttons: list[Button] = []
 
-        self.executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="watersort-solver")
+        self.executor = self._create_executor()
         self.solver_future: Future | None = None
         self.solver_started_at: float | None = None
         self.solver_job_kind: str | None = None
-        self.solver_request_id: int = 0
 
         self.refresh_layout()
 
     # ----------------------------
-    # Cleanup
+    # Process management
     # ----------------------------
+
+    def _create_executor(self) -> ProcessPoolExecutor:
+        return ProcessPoolExecutor(max_workers=1)
+
+    def _reset_executor(self) -> None:
+        try:
+            self.executor.shutdown(wait=False, cancel_futures=True)
+        except Exception:
+            pass
+        self.executor = self._create_executor()
 
     def close(self) -> None:
         self.cancel_solver()
-        self.executor.shutdown(wait=False, cancel_futures=True)
+        try:
+            self.executor.shutdown(wait=False, cancel_futures=True)
+        except Exception:
+            pass
+
+    # ----------------------------
+    # Report saving
+    # ----------------------------
+
+    def save_solver_report(self, algorithm_name: str, result) -> None:
+        try:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            puzzle_name = os.path.splitext(os.path.basename(self.puzzle_file))[0]
+
+            safe_algorithm = (
+                algorithm_name.replace(" ", "_")
+                .replace("*", "star")
+                .replace("(", "")
+                .replace(")", "")
+                .replace("=", "_")
+                .replace(".", "_")
+            )
+
+            output_path = os.path.join(
+                self.results_folder,
+                f"{puzzle_name}_{safe_algorithm}_{timestamp}.txt"
+            )
+
+            stats = {
+                "time_seconds": result.time_seconds,
+                "states_explored": result.states_explored,
+                "max_memory_kb": result.max_memory_kb,
+                "solution_length": len(result.solution) if result.solution is not None else 0,
+                "solved": result.solution is not None,
+            }
+
+            save_results(
+                filepath=output_path,
+                puzzle_file=self.puzzle_file,
+                algorithm=algorithm_name,
+                solution_moves=result.solution,
+                stats=stats,
+                initial_state=self.initial_state,
+            )
+        except Exception as e:
+            self.set_status(f"Report save failed: {e}", "warning")
 
     # ----------------------------
     # Responsive layout / sizing
@@ -215,7 +297,7 @@ class WaterSortUI:
         sw, sh = self.get_screen_size()
 
         self.top_margin = max(90, int(sh * 0.11))
-        self.bottom_panel_h = max(120, int(sh * 0.17))
+        self.bottom_panel_h = max(180, int(sh * 0.24))
 
         self.font_title = pygame.font.SysFont("arial", max(28, int(sh * 0.038)), bold=True)
         self.font_main = pygame.font.SysFont("arial", max(19, int(sh * 0.024)))
@@ -264,37 +346,46 @@ class WaterSortUI:
     def create_buttons(self) -> list[Button]:
         sw, sh = self.get_screen_size()
 
-        y1 = sh - self.bottom_panel_h + max(12, int(self.bottom_panel_h * 0.14))
-        y2 = y1 + max(48, int(self.bottom_panel_h * 0.36)) + 10
+        y1 = sh - self.bottom_panel_h + max(10, int(self.bottom_panel_h * 0.10))
+        y2 = y1 + max(44, int(self.bottom_panel_h * 0.24)) + 8
+        y3 = y2 + max(44, int(self.bottom_panel_h * 0.24)) + 8
 
-        w = max(110, min(160, int(sw * 0.09)))
-        h = max(40, min(52, int(self.bottom_panel_h * 0.30)))
+        w = max(95, min(135, int(sw * 0.075)))
+        h = max(36, min(46, int(self.bottom_panel_h * 0.22)))
         gap = max(8, int(sw * 0.006))
 
         row1 = [
             ("Undo", "undo"),
             ("Reset", "reset"),
+            ("BFS", "solve_bfs"),
+            ("DFS", "solve_dfs"),
+            ("IDDFS", "solve_iddfs"),
+            ("UCS", "solve_ucs"),
+        ]
+        row2 = [
             ("Greedy", "solve_greedy"),
             ("A*", "solve_astar"),
             ("WA*", "solve_wastar"),
-        ]
-        row2 = [
             ("Hint", "hint"),
             ("Stop Auto", "stop_auto"),
+        ]
+        row3 = [
             ("New Puzzle", "new_puzzle"),
             ("Main Menu", "main_menu"),
         ]
 
-        total_w1 = len(row1) * w + (len(row1) - 1) * gap
-        total_w2 = len(row2) * w + (len(row2) - 1) * gap
-        start_x1 = (sw - total_w1) // 2
-        start_x2 = (sw - total_w2) // 2
+        def build_row(row, y):
+            total_w = len(row) * w + (len(row) - 1) * gap
+            start_x = (sw - total_w) // 2
+            return [
+                Button(pygame.Rect(start_x + i * (w + gap), y, w, h), text, action)
+                for i, (text, action) in enumerate(row)
+            ]
 
-        buttons: list[Button] = []
-        for i, (text, action) in enumerate(row1):
-            buttons.append(Button(pygame.Rect(start_x1 + i * (w + gap), y1, w, h), text, action))
-        for i, (text, action) in enumerate(row2):
-            buttons.append(Button(pygame.Rect(start_x2 + i * (w + gap), y2, w, h), text, action))
+        buttons = []
+        buttons.extend(build_row(row1, y1))
+        buttons.extend(build_row(row2, y2))
+        buttons.extend(build_row(row3, y3))
         return buttons
 
     # ----------------------------
@@ -314,11 +405,17 @@ class WaterSortUI:
 
     def cancel_solver(self) -> None:
         if self.solver_future is not None:
-            self.solver_future.cancel()
+            try:
+                self.solver_future.cancel()
+            except Exception:
+                pass
+
         self.solver_future = None
         self.solver_started_at = None
         self.solver_job_kind = None
-        self.solver_request_id += 1
+
+        # Reset worker process so runaway jobs do not keep consuming CPU.
+        self._reset_executor()
 
     def start_solver_job(self, job_kind: str) -> None:
         if self.animation is not None:
@@ -331,6 +428,10 @@ class WaterSortUI:
         self.solution_queue.clear()
 
         label_map = {
+            "solve_bfs": "BFS",
+            "solve_dfs": "DFS",
+            "solve_iddfs": "IDDFS",
+            "solve_ucs": "UCS",
             "solve_greedy": "Greedy",
             "solve_astar": "A*",
             "solve_wastar": f"WA* (W={WASTAR_WEIGHT})",
@@ -338,11 +439,9 @@ class WaterSortUI:
         }
         self.set_status(f"Running {label_map.get(job_kind, 'solver')}...", "warning")
 
-        self.solver_request_id += 1
-        state_snapshot = self.state
         self.solver_job_kind = job_kind
         self.solver_started_at = time.perf_counter()
-        self.solver_future = self.executor.submit(_run_solver_job, job_kind, state_snapshot)
+        self.solver_future = self.executor.submit(_run_solver_job, job_kind, self.state)
 
     def poll_solver(self) -> None:
         if self.solver_future is None:
@@ -390,13 +489,17 @@ class WaterSortUI:
         result = payload.get("result")
 
         if result is None or result.solution is None:
+            if result is not None:
+                self.save_solver_report(label, result)
             self.set_status(f"{label} found no solution. Puzzle may be unsolvable.", "error")
             return
 
         if len(result.solution) == 0:
+            self.save_solver_report(label, result)
             self.set_status("Puzzle already solved.", "success")
             return
 
+        self.save_solver_report(label, result)
         self.solution_queue = list(result.solution)
         self.set_status(f"{label} found solution in {len(result.solution)} moves. Auto-playing...", "warning")
 
@@ -821,7 +924,16 @@ class WaterSortUI:
                     self.undo()
                 elif button.action == "reset":
                     self.reset()
-                elif button.action in {"solve_greedy", "solve_astar", "solve_wastar", "hint"}:
+                elif button.action in {
+                    "solve_bfs",
+                    "solve_dfs",
+                    "solve_iddfs",
+                    "solve_ucs",
+                    "solve_greedy",
+                    "solve_astar",
+                    "solve_wastar",
+                    "hint",
+                }:
                     self.start_solver_job(button.action)
                 elif button.action == "stop_auto":
                     self.cancel_solver()
@@ -880,10 +992,18 @@ class WaterSortUI:
                 self.undo()
             elif event.key == pygame.K_r:
                 self.reset()
-            elif event.key == pygame.K_s:
-                self.start_solver_job("solve_astar")
+            elif event.key == pygame.K_b:
+                self.start_solver_job("solve_bfs")
+            elif event.key == pygame.K_d:
+                self.start_solver_job("solve_dfs")
+            elif event.key == pygame.K_i:
+                self.start_solver_job("solve_iddfs")
+            elif event.key == pygame.K_c:
+                self.start_solver_job("solve_ucs")
             elif event.key == pygame.K_g:
                 self.start_solver_job("solve_greedy")
+            elif event.key == pygame.K_s:
+                self.start_solver_job("solve_astar")
             elif event.key == pygame.K_w:
                 self.start_solver_job("solve_wastar")
             elif event.key == pygame.K_h:
@@ -940,7 +1060,16 @@ class WaterSortUI:
                 button.enabled = self.animation is None and not self.is_solver_running() and (
                     self.state != self.initial_state or len(self.history) > 1
                 )
-            elif button.action in {"solve_greedy", "solve_astar", "solve_wastar", "hint"}:
+            elif button.action in {
+                "solve_bfs",
+                "solve_dfs",
+                "solve_iddfs",
+                "solve_ucs",
+                "solve_greedy",
+                "solve_astar",
+                "solve_wastar",
+                "hint",
+            }:
                 button.enabled = self.animation is None and not self.is_solver_running() and not self.state.is_goal()
             elif button.action == "stop_auto":
                 button.enabled = (len(self.solution_queue) > 0 or self.is_solver_running()) and self.animation is None

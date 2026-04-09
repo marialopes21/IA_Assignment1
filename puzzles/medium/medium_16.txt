@@ -1,0 +1,10 @@
+# Medium puzzle 16 - 6 colors, denser crossing
+capacity=4
+red blue green purple
+blue green yellow orange
+green yellow orange red
+yellow orange red blue
+purple red blue green
+orange purple yellow red
+empty
+empty

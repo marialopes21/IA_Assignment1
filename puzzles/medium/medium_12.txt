@@ -1,0 +1,12 @@
+# Medium puzzle 12 - 8 colors
+capacity=4
+red blue green yellow
+blue green yellow purple
+green yellow purple orange
+yellow purple orange cyan
+purple orange cyan pink
+orange cyan pink red
+cyan pink red blue
+pink red blue green
+empty
+empty

@@ -1,0 +1,8 @@
+# Easy puzzle 20 - capacity 5, 4 colors
+capacity=5
+red blue green yellow red
+blue green yellow red blue
+green yellow red blue green
+yellow red blue green yellow
+empty
+empty

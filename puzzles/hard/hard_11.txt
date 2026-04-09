@@ -1,0 +1,13 @@
+# Hard puzzle 11 - 9 colors
+capacity=4
+red blue green yellow
+purple orange cyan pink
+lime red blue green
+yellow purple orange cyan
+pink lime red blue
+green yellow purple orange
+cyan pink lime red
+blue green yellow purple
+orange cyan pink lime
+empty
+empty

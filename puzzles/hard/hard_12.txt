@@ -1,0 +1,13 @@
+# Hard puzzle 12 - 9 colors, alternating structure
+capacity=4
+red blue red blue
+green yellow green yellow
+purple orange purple orange
+cyan pink cyan pink
+lime teal lime teal
+blue green blue green
+yellow purple yellow purple
+orange cyan orange cyan
+pink lime pink lime
+empty
+empty

@@ -1,0 +1,8 @@
+# Easy puzzle 10 - 4 colors
+capacity=4
+red blue green yellow
+blue green yellow red
+green yellow red blue
+yellow red blue green
+empty
+empty

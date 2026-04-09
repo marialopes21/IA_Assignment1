@@ -1,0 +1,9 @@
+# Medium puzzle 24 - capacity 3, 5 colors
+capacity=3
+red blue green
+blue green yellow
+green yellow purple
+yellow purple red
+purple red blue
+empty
+empty

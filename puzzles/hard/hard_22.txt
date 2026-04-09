@@ -1,0 +1,14 @@
+# Hard puzzle 22 - capacity 6, 10 colors
+capacity=6
+red blue green yellow purple orange
+cyan pink lime teal red blue
+green yellow purple orange cyan pink
+lime teal red blue green yellow
+purple orange cyan pink lime teal
+red blue green yellow purple orange
+cyan pink lime teal red blue
+green yellow purple orange cyan pink
+lime teal red blue green yellow
+purple orange cyan pink lime teal
+empty
+empty

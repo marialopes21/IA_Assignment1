@@ -1,0 +1,10 @@
+# Medium puzzle 23 - capacity 3, 6 colors
+capacity=3
+red blue green
+yellow purple orange
+blue green yellow
+purple orange red
+green yellow purple
+orange red blue
+empty
+empty

@@ -1,0 +1,16 @@
+# Hard puzzle 25 - 12 colors, capacity 6, high branching, very complex
+capacity=6
+red blue green yellow purple orange
+blue purple yellow orange cyan pink
+green orange cyan red teal maroon
+yellow cyan red lime maroon green
+purple pink teal maroon blue gold
+orange lime gold blue pink purple
+cyan teal purple pink gold lime
+pink maroon lime green yellow teal
+lime gold blue gold orange red
+teal red orange purple green cyan
+maroon yellow pink cyan red blue
+gold green maroon teal lime yellow
+empty
+empty

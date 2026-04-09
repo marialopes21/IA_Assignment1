@@ -1,0 +1,15 @@
+# Hard puzzle 16 - 11 colors
+capacity=4
+red blue green yellow
+purple orange cyan pink
+lime teal maroon red
+blue green yellow purple
+orange cyan pink lime
+teal maroon red blue
+green yellow purple orange
+cyan pink lime teal
+maroon red blue green
+yellow purple orange cyan
+pink lime teal maroon
+empty
+empty

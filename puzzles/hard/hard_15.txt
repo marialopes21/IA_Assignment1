@@ -1,0 +1,14 @@
+# Hard puzzle 15 - 10 colors, high branching
+capacity=4
+red blue green pink
+blue green yellow red
+green yellow purple blue
+yellow purple orange green
+purple orange cyan yellow
+orange cyan pink purple
+cyan pink lime orange
+pink lime teal cyan
+lime teal red lime
+teal red blue teal
+empty
+empty

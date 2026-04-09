@@ -1,0 +1,11 @@
+# Medium puzzle 21 - capacity 5, 7 colors
+capacity=5
+red blue green yellow purple
+orange cyan red blue green
+yellow purple orange cyan red
+blue green yellow purple orange
+cyan red blue green yellow
+purple orange cyan red blue
+green yellow purple orange cyan
+empty
+empty

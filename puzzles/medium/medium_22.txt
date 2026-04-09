@@ -1,0 +1,9 @@
+# Medium puzzle 22 - capacity 4, 5 colors
+capacity=4
+red blue green yellow
+blue green yellow purple
+green yellow purple red
+yellow purple red blue
+purple red blue green
+empty
+empty

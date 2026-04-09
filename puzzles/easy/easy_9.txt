@@ -1,0 +1,7 @@
+# Easy puzzle 9 - 3 colors, close to solved structure
+capacity=4
+red red blue green
+blue blue green red
+green green red blue
+empty
+empty

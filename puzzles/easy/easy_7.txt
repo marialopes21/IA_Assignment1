@@ -1,0 +1,7 @@
+# Easy puzzle 7 - 3 colors
+capacity=4
+red blue green red
+blue green red blue
+green red blue green
+empty
+empty

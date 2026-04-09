@@ -1,0 +1,7 @@
+# Special puzzle 1 - easy, capacity 3, 3 colors
+capacity=3
+red blue green
+blue green red
+green red blue
+empty
+empty

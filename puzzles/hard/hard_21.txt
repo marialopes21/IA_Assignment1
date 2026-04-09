@@ -1,0 +1,11 @@
+# Hard puzzle 21 - capacity 6, 9 colors
+capacity=6
+red blue green yellow purple orange
+cyan pink lime red blue green
+yellow purple orange cyan pink lime
+red blue green yellow purple orange
+cyan pink lime red blue green
+yellow purple orange cyan pink lime
+empty
+empty
+empty

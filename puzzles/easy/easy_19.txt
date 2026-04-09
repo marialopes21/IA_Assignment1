@@ -1,0 +1,7 @@
+# Easy puzzle 19 - capacity 5, 3 colors
+capacity=5
+red blue green red blue
+green red blue green red
+blue green red blue green
+empty
+empty

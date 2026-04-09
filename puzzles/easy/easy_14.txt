@@ -1,0 +1,8 @@
+# Easy puzzle 14 - 4 colors, slightly more mixed
+capacity=4
+red blue yellow green
+blue green red yellow
+green yellow blue red
+yellow red green blue
+empty
+empty

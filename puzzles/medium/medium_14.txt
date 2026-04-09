@@ -1,0 +1,9 @@
+# Medium puzzle 6 - 5 colors, more deceptive tops
+capacity=4
+red blue red yellow
+blue green yellow purple
+green yellow purple red
+yellow purple green blue
+purple red blue green
+empty
+empty

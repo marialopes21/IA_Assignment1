@@ -1,0 +1,14 @@
+# Hard puzzle 14 - 10 colors
+capacity=4
+red blue green yellow
+purple orange cyan pink
+lime teal red blue
+green yellow purple orange
+cyan pink lime teal
+red blue green yellow
+purple orange cyan pink
+lime teal red blue
+green yellow purple orange
+cyan pink lime teal
+empty
+empty

@@ -1,0 +1,13 @@
+# Hard puzzle 13 - 9 colors, strong cross-dependency
+capacity=4
+red blue green purple
+blue green yellow orange
+green yellow purple cyan
+yellow purple orange pink
+purple orange cyan lime
+orange cyan pink red
+cyan pink lime blue
+pink lime red green
+lime red blue yellow
+empty
+empty
