@@ -1,13 +1,5 @@
 """
 search_heuristic.py - Heuristic Search Algorithms for Water Sort Puzzle
-
-Algorithms implemented:
-  - Greedy Best-First Search  (fast, not optimal)
-  - A*                        (optimal + complete)
-  - Weighted A*               (faster than A*, trades optimality for speed)
-
-All algorithms accept a heuristic function h(state) -> int/float.
-All return a SearchResult 
 """
 
 import time
@@ -17,9 +9,7 @@ from state import WaterSortState
 from search import SearchResult  
 from heuristics import h3_combined
 
-
 # Internal helpers 
-
 def _start_tracking():
     tracemalloc.start()
     return time.perf_counter()
@@ -30,9 +20,7 @@ def _stop_tracking(start_time):
     tracemalloc.stop()
     return elapsed, peak / 1024
 
-
 # Greedy Best-First Search
-
 def greedy(initial_state: WaterSortState, heuristic=h3_combined) -> SearchResult:
     start_time = _start_tracking()
     states_explored = 0
@@ -67,9 +55,7 @@ def greedy(initial_state: WaterSortState, heuristic=h3_combined) -> SearchResult
     elapsed, mem = _stop_tracking(start_time)
     return SearchResult(None, states_explored, mem, elapsed, "Greedy")
 
-
 # A* Search
-
 def astar(initial_state: WaterSortState, heuristic=h3_combined) -> SearchResult:
     start_time = _start_tracking()
     states_explored = 0
@@ -104,9 +90,7 @@ def astar(initial_state: WaterSortState, heuristic=h3_combined) -> SearchResult:
     elapsed, mem = _stop_tracking(start_time)
     return SearchResult(None, states_explored, mem, elapsed, "A*")
 
-
 # Weighted A*
-
 def weighted_astar(
     initial_state: WaterSortState,
     heuristic=h3_combined,
@@ -145,8 +129,6 @@ def weighted_astar(
 
     elapsed, mem = _stop_tracking(start_time)
     return SearchResult(None, states_explored, mem, elapsed, algorithm_name)
-
-
 
 def compare_heuristic_algorithms(
     initial_state: WaterSortState,

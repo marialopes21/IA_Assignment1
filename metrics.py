@@ -1,8 +1,3 @@
-"""
-Performance Metrics & Algorithm Comparison for Water Sort
-
-"""
-
 import os
 import time
 from state import WaterSortState
@@ -12,7 +7,6 @@ from heuristics import h1_unsolved_tubes, h2_color_misplacement, h3_combined
 from puzzle_io import load_puzzle, list_puzzles
 
 # Algorithm registry
-
 UNINFORMED = [
     ("BFS",   bfs),
     ("DFS",   dfs),
@@ -32,9 +26,7 @@ HEURISTIC = [
 ]
 
 ALL_ALGORITHMS = UNINFORMED + HEURISTIC
-
 SLOW_ALGORITHMS = {"IDDFS"}
-
 
 def run_algorithm(name: str, fn, state: WaterSortState, skip_slow=False) -> SearchResult | None:
     if skip_slow and name in SLOW_ALGORITHMS:
@@ -46,9 +38,6 @@ def run_algorithm(name: str, fn, state: WaterSortState, skip_slow=False) -> Sear
     result.algorithm = name
     print(f"  {result}")
     return result
-
-
-# Run all algorithms on one puzzle
 
 def benchmark_puzzle(
     state: WaterSortState,
@@ -70,8 +59,6 @@ def benchmark_puzzle(
             results.append(result)
 
     return results
-
-# Run all algorithms across multiple puzzles
 
 def benchmark_all_puzzles(
     puzzle_folder: str = "puzzles",
@@ -95,7 +82,6 @@ def benchmark_all_puzzles(
 
     return all_results
 
-
 def print_table(results: list[SearchResult], title: str = "Results") -> None:
     if not results:
         print("No results to display.")
@@ -117,7 +103,6 @@ def print_table(results: list[SearchResult], title: str = "Results") -> None:
             f"{r.time_seconds:.4f}"
         )
     print("─" * 72)
-
 
 def save_report(
     results_by_puzzle: dict[str, list[SearchResult]],

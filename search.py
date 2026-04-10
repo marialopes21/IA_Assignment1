@@ -1,15 +1,5 @@
 """
 search.py - Search Algorithms for Water Sort Puzzle
-
-Algorithms implemented:
-  - BFS   : Breadth-First Search       (optimal: fewest moves)
-  - DFS   : Depth-First Search         (fast, not optimal)
-  - IDDFS : Iterative Deepening DFS    (optimal + memory efficient)
-  - UCS   : Uniform Cost Search        (optimal with weighted costs)
-
-All algorithms return a SearchResult object containing:
-  - solution  : list of (src, dst) moves, or None if unsolvable
-  - stats     : dict with time, memory, states explored
 """
 
 import time

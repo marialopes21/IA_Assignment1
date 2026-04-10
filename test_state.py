@@ -1,14 +1,10 @@
-
-
 from state import WaterSortState
 from puzzle_io import load_puzzle, save_puzzle, save_results
-
 
 def separator(title):
     print(f"\n{'─'*40}")
     print(f"  {title}")
     print('─'*40)
-
 
 # TEST 1: Basic state creation & display
 separator("TEST 1: State creation")
