@@ -2,9 +2,9 @@
 
 ## main.py
 Run the game.
-´´´bash 
+```bash 
 python main.py
-´´´
+```
 
 ## ui.py
 File for the water sort game user interface.
@@ -23,9 +23,9 @@ Each tube is a list of color strings, where:
 
 ## test_state.py
 File responsible for state testing.
-´´´bash 
+```bash  
 python test_state.py
-´´´
+```
 
 ## search.py
 Algorithms implemented:
@@ -40,9 +40,9 @@ All algorithms return a SearchResult object containing:
 
 ## test_search.py
 File responsible for search testing.
-´´´bash 
+```bash 
 python test_search.py
-´´´
+```
 
 ## heuristics.py
 Heuristic Functions for Water Sort Puzzle.
@@ -59,15 +59,15 @@ Algorithms implemented:
 
 ## test_heuristics.py
 File responsible for heuristics testing
-´´´bash 
+```bash 
 python test_heuristics.py
-´´´
+```
 
 ## metrics.py
 Performance Metrics & Algorithm Comparison for Water Sort.
 
 ## test_metrics.py
 File responsible for metrics testing
-´´´bash 
+```bash 
 python test_metrics.py
-´´´
+```
