@@ -1,0 +1,68 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/hard/hard_17.txt
+Algorithm    : Greedy
+
+Initial State:
+  Tube 0: red blue green yellow
+  Tube 1: purple orange cyan pink
+  Tube 2: lime teal maroon gold
+  Tube 3: blue green yellow purple
+  Tube 4: orange cyan pink lime
+  Tube 5: teal maroon gold red
+  Tube 6: green yellow purple orange
+  Tube 7: cyan pink lime teal
+  Tube 8: maroon gold red blue
+  Tube 9: yellow purple orange cyan
+  Tube 10: pink lime teal maroon
+  Tube 11: gold red blue green
+  Tube 12: (empty)
+  Tube 13: (empty)
+
+Performance:
+  time_seconds          : 0.03799972499996329
+  states_explored       : 38
+  max_memory_kb         : 676.375
+  solution_length       : 37
+  solved                : True
+
+Solution (37 moves):
+  Step   1: Pour tube 0 → tube 12
+  Step   2: Pour tube 11 → tube 0
+  Step   3: Pour tube 8 → tube 11
+  Step   4: Pour tube 5 → tube 8
+  Step   5: Pour tube 2 → tube 5
+  Step   6: Pour tube 10 → tube 2
+  Step   7: Pour tube 7 → tube 10
+  Step   8: Pour tube 4 → tube 7
+  Step   9: Pour tube 1 → tube 4
+  Step  10: Pour tube 9 → tube 1
+  Step  11: Pour tube 6 → tube 9
+  Step  12: Pour tube 3 → tube 6
+  Step  13: Pour tube 3 → tube 12
+  Step  14: Pour tube 0 → tube 3
+  Step  15: Pour tube 11 → tube 0
+  Step  16: Pour tube 8 → tube 11
+  Step  17: Pour tube 5 → tube 8
+  Step  18: Pour tube 2 → tube 5
+  Step  19: Pour tube 10 → tube 2
+  Step  20: Pour tube 7 → tube 10
+  Step  21: Pour tube 4 → tube 7
+  Step  22: Pour tube 1 → tube 4
+  Step  23: Pour tube 9 → tube 1
+  Step  24: Pour tube 6 → tube 9
+  Step  25: Pour tube 6 → tube 12
+  Step  26: Pour tube 3 → tube 6
+  Step  27: Pour tube 0 → tube 3
+  Step  28: Pour tube 11 → tube 0
+  Step  29: Pour tube 8 → tube 11
+  Step  30: Pour tube 5 → tube 8
+  Step  31: Pour tube 2 → tube 5
+  Step  32: Pour tube 10 → tube 2
+  Step  33: Pour tube 7 → tube 10
+  Step  34: Pour tube 4 → tube 7
+  Step  35: Pour tube 1 → tube 4
+  Step  36: Pour tube 9 → tube 1
+  Step  37: Pour tube 9 → tube 12

@@ -1,0 +1,29 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/easy/easy_15.txt
+Algorithm    : IDDFS
+
+Initial State:
+  Tube 0: red blue green
+  Tube 1: blue green red
+  Tube 2: green red blue
+  Tube 3: (empty)
+  Tube 4: (empty)
+
+Performance:
+  time_seconds          : 0.8368908069969621
+  states_explored       : 15609
+  max_memory_kb         : 100.6875
+  solution_length       : 7
+  solved                : True
+
+Solution (7 moves):
+  Step   1: Pour tube 0 → tube 3
+  Step   2: Pour tube 2 → tube 0
+  Step   3: Pour tube 1 → tube 2
+  Step   4: Pour tube 1 → tube 3
+  Step   5: Pour tube 0 → tube 1
+  Step   6: Pour tube 2 → tube 0
+  Step   7: Pour tube 2 → tube 3

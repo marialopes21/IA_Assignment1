@@ -1,0 +1,32 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/easy/easy_21.txt
+Algorithm    : Greedy
+
+Initial State:
+  Tube 0: red blue red blue red blue
+  Tube 1: blue red blue red blue red
+  Tube 2: (empty)
+  Tube 3: (empty)
+
+Performance:
+  time_seconds          : 0.005086874996777624
+  states_explored       : 12
+  max_memory_kb         : 13.6328125
+  solution_length       : 11
+  solved                : True
+
+Solution (11 moves):
+  Step   1: Pour tube 0 → tube 2
+  Step   2: Pour tube 1 → tube 0
+  Step   3: Pour tube 1 → tube 2
+  Step   4: Pour tube 0 → tube 1
+  Step   5: Pour tube 0 → tube 2
+  Step   6: Pour tube 1 → tube 0
+  Step   7: Pour tube 1 → tube 2
+  Step   8: Pour tube 0 → tube 1
+  Step   9: Pour tube 0 → tube 2
+  Step  10: Pour tube 1 → tube 0
+  Step  11: Pour tube 1 → tube 2

@@ -1,0 +1,5 @@
+algorithm,puzzles_run,solved_pct,avg_moves,avg_states,avg_memory_kb,avg_time_s
+A*,10,100.0,41.8,69.0,675.49,0.04
+DFS,10,100.0,142.7,1557.7,3032.3,0.13
+Greedy,10,100.0,42.1,43.1,449.38,0.03
+WA* (W=1.5),10,100.0,42.1,43.1,441.76,0.03

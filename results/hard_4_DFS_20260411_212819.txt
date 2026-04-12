@@ -1,0 +1,127 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/hard/hard_4.txt
+Algorithm    : DFS
+
+Initial State:
+  Tube 0: red blue green yellow
+  Tube 1: purple orange cyan pink
+  Tube 2: lime teal red blue
+  Tube 3: green yellow purple orange
+  Tube 4: cyan pink lime teal
+  Tube 5: red blue green yellow
+  Tube 6: purple orange cyan pink
+  Tube 7: lime teal red blue
+  Tube 8: green yellow purple orange
+  Tube 9: cyan pink lime teal
+  Tube 10: (empty)
+  Tube 11: (empty)
+
+Performance:
+  time_seconds          : 0.022328583000103208
+  states_explored       : 132
+  max_memory_kb         : 613.5625
+  solution_length       : 98
+  solved                : True
+
+Solution (98 moves):
+  Step   1: Pour tube 9 → tube 11
+  Step   2: Pour tube 11 → tube 10
+  Step   3: Pour tube 9 → tube 11
+  Step   4: Pour tube 6 → tube 9
+  Step   5: Pour tube 4 → tube 10
+  Step   6: Pour tube 11 → tube 4
+  Step   7: Pour tube 10 → tube 11
+  Step   8: Pour tube 9 → tube 10
+  Step   9: Pour tube 9 → tube 6
+  Step  10: Pour tube 11 → tube 9
+  Step  11: Pour tube 10 → tube 11
+  Step  12: Pour tube 9 → tube 10
+  Step  13: Pour tube 11 → tube 9
+  Step  14: Pour tube 10 → tube 11
+  Step  15: Pour tube 8 → tube 10
+  Step  16: Pour tube 3 → tube 10
+  Step  17: Pour tube 8 → tube 3
+  Step  18: Pour tube 5 → tube 8
+  Step  19: Pour tube 1 → tube 9
+  Step  20: Pour tube 6 → tube 1
+  Step  21: Pour tube 0 → tube 8
+  Step  22: Pour tube 5 → tube 0
+  Step  23: Pour tube 7 → tube 5
+  Step  24: Pour tube 2 → tube 5
+  Step  25: Pour tube 7 → tube 2
+  Step  26: Pour tube 11 → tube 7
+  Step  27: Pour tube 10 → tube 11
+  Step  28: Pour tube 9 → tube 10
+  Step  29: Pour tube 11 → tube 9
+  Step  30: Pour tube 10 → tube 11
+  Step  31: Pour tube 9 → tube 10
+  Step  32: Pour tube 7 → tube 9
+  Step  33: Pour tube 4 → tube 7
+  Step  34: Pour tube 11 → tube 4
+  Step  35: Pour tube 4 → tube 11
+  Step  36: Pour tube 6 → tube 4
+  Step  37: Pour tube 10 → tube 6
+  Step  38: Pour tube 9 → tube 10
+  Step  39: Pour tube 7 → tube 9
+  Step  40: Pour tube 10 → tube 7
+  Step  41: Pour tube 9 → tube 10
+  Step  42: Pour tube 7 → tube 9
+  Step  43: Pour tube 6 → tube 7
+  Step  44: Pour tube 3 → tube 6
+  Step  45: Pour tube 8 → tube 3
+  Step  46: Pour tube 1 → tube 4
+  Step  47: Pour tube 7 → tube 1
+  Step  48: Pour tube 3 → tube 8
+  Step  49: Pour tube 1 → tube 7
+  Step  50: Pour tube 8 → tube 3
+  Step  51: Pour tube 6 → tube 1
+  Step  52: Pour tube 10 → tube 6
+  Step  53: Pour tube 9 → tube 10
+  Step  54: Pour tube 8 → tube 9
+  Step  55: Pour tube 3 → tube 9
+  Step  56: Pour tube 8 → tube 3
+  Step  57: Pour tube 10 → tube 8
+  Step  58: Pour tube 6 → tube 10
+  Step  59: Pour tube 8 → tube 6
+  Step  60: Pour tube 10 → tube 8
+  Step  61: Pour tube 6 → tube 10
+  Step  62: Pour tube 5 → tube 6
+  Step  63: Pour tube 2 → tube 5
+  Step  64: Pour tube 10 → tube 2
+  Step  65: Pour tube 2 → tube 10
+  Step  66: Pour tube 8 → tube 2
+  Step  67: Pour tube 6 → tube 8
+  Step  68: Pour tube 5 → tube 6
+  Step  69: Pour tube 8 → tube 5
+  Step  70: Pour tube 6 → tube 8
+  Step  71: Pour tube 5 → tube 6
+  Step  72: Pour tube 3 → tube 5
+  Step  73: Pour tube 8 → tube 3
+  Step  74: Pour tube 6 → tube 8
+  Step  75: Pour tube 5 → tube 6
+  Step  76: Pour tube 8 → tube 5
+  Step  77: Pour tube 6 → tube 8
+  Step  78: Pour tube 5 → tube 6
+  Step  79: Pour tube 3 → tube 5
+  Step  80: Pour tube 6 → tube 3
+  Step  81: Pour tube 8 → tube 6
+  Step  82: Pour tube 5 → tube 8
+  Step  83: Pour tube 6 → tube 5
+  Step  84: Pour tube 8 → tube 6
+  Step  85: Pour tube 5 → tube 8
+  Step  86: Pour tube 3 → tube 5
+  Step  87: Pour tube 0 → tube 8
+  Step  88: Pour tube 6 → tube 3
+  Step  89: Pour tube 5 → tube 6
+  Step  90: Pour tube 6 → tube 0
+  Step  91: Pour tube 6 → tube 5
+  Step  92: Pour tube 3 → tube 6
+  Step  93: Pour tube 5 → tube 3
+  Step  94: Pour tube 6 → tube 5
+  Step  95: Pour tube 3 → tube 6
+  Step  96: Pour tube 0 → tube 6
+  Step  97: Pour tube 5 → tube 3
+  Step  98: Pour tube 3 → tube 0

@@ -1,0 +1,59 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/hard/hard_10.txt
+Algorithm    : A*
+
+Initial State:
+  Tube 0: red blue red blue
+  Tube 1: green yellow green yellow
+  Tube 2: purple orange purple orange
+  Tube 3: cyan pink cyan pink
+  Tube 4: lime red lime red
+  Tube 5: blue green blue green
+  Tube 6: yellow purple yellow purple
+  Tube 7: orange cyan orange cyan
+  Tube 8: pink lime pink lime
+  Tube 9: (empty)
+  Tube 10: (empty)
+
+Performance:
+  time_seconds          : 0.16629573800003072
+  states_explored       : 265
+  max_memory_kb         : 2484.765625
+  solution_length       : 31
+  solved                : True
+
+Solution (31 moves):
+  Step   1: Pour tube 0 → tube 9
+  Step   2: Pour tube 4 → tube 0
+  Step   3: Pour tube 8 → tube 4
+  Step   4: Pour tube 3 → tube 8
+  Step   5: Pour tube 7 → tube 3
+  Step   6: Pour tube 2 → tube 7
+  Step   7: Pour tube 6 → tube 2
+  Step   8: Pour tube 1 → tube 6
+  Step   9: Pour tube 5 → tube 1
+  Step  10: Pour tube 5 → tube 9
+  Step  11: Pour tube 1 → tube 5
+  Step  12: Pour tube 1 → tube 10
+  Step  13: Pour tube 5 → tube 1
+  Step  14: Pour tube 5 → tube 9
+  Step  15: Pour tube 6 → tube 10
+  Step  16: Pour tube 2 → tube 6
+  Step  17: Pour tube 2 → tube 5
+  Step  18: Pour tube 6 → tube 2
+  Step  19: Pour tube 6 → tube 10
+  Step  20: Pour tube 7 → tube 5
+  Step  21: Pour tube 3 → tube 7
+  Step  22: Pour tube 3 → tube 6
+  Step  23: Pour tube 7 → tube 3
+  Step  24: Pour tube 8 → tube 6
+  Step  25: Pour tube 4 → tube 8
+  Step  26: Pour tube 0 → tube 4
+  Step  27: Pour tube 0 → tube 9
+  Step  28: Pour tube 4 → tube 0
+  Step  29: Pour tube 8 → tube 4
+  Step  30: Pour tube 5 → tube 7
+  Step  31: Pour tube 6 → tube 8

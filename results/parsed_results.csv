@@ -1,0 +1,159 @@
+source_file,puzzle_file,puzzle_name,difficulty,algorithm,solved,solution_length,states_explored,max_memory_kb,time_seconds
+results/easy_15_Astar_20260411_184437.txt,puzzles/easy/easy_15.txt,easy_15.txt,Easy,A*,True,7,8,11.5,0.004330679992563091
+results/hard_22_DFS_20260411_213352.txt,puzzles/hard/hard_22.txt,hard_22.txt,Hard,DFS,True,128,165,897.671875,0.027415672999950402
+results/medium_7_DFS_20260411_202217.txt,puzzles/medium/medium_7.txt,medium_7.txt,Medium,DFS,True,200,489,1578.5703125,0.05044167500000185
+results/medium_15_WAstar_W_1_5_20260411_202106.txt,puzzles/medium/medium_15.txt,medium_15.txt,Medium,WA* (W=1.5),True,19,20,99.296875,0.017415739999933066
+results/medium_18_Greedy_20260411_203844.txt,puzzles/medium/medium_18.txt,medium_18.txt,Medium,Greedy,True,19,20,66.953125,0.017260966000094413
+results/medium_13_DFS_20260411_204110.txt,puzzles/medium/medium_13.txt,medium_13.txt,Medium,DFS,True,75,76,195.453125,0.01436360100001366
+results/hard_18_WAstar_W_1_5_20260411_222042.txt,puzzles/hard/hard_18.txt,hard_18.txt,Hard,WA* (W=1.5),True,29,30,266.0,0.014643427999544656
+results/hard_13_WAstar_W_1_5_20260411_214735.txt,puzzles/hard/hard_13.txt,hard_13.txt,Hard,WA* (W=1.5),True,28,29,196.5546875,0.01928202599992801
+results/easy_2_Greedy_20260411_180349.txt,puzzles/easy/easy_2.txt,easy_2.txt,Easy,Greedy,True,3,4,4.546875,0.0005199429870117456
+results/easy_24_IDDFS_20260411_184039.txt,puzzles/easy/easy_24.txt,easy_24.txt,Easy,IDDFS,True,5,577,44.7734375,0.02599997200013604
+results/hard_24_DFS_20260411_220138.txt,puzzles/hard/hard_24.txt,hard_24.txt,Hard,DFS,True,190,191,1831.71875,0.034022695000203385
+results/easy_7_DFS_20260411_182128.txt,puzzles/easy/easy_7.txt,easy_7.txt,Easy,DFS,True,79,80,219.1796875,0.011574983989703469
+results/easy_21_DFS_20260411_184535.txt,puzzles/easy/easy_21.txt,easy_21.txt,Easy,DFS,True,60,61,101.453125,0.011129449994768947
+results/easy_9_BFS_20260411_183733.txt,puzzles/easy/easy_9.txt,easy_9.txt,Easy,BFS,True,7,424,446.078125,0.0846066369995242
+results/medium_23_UCS_20260411_203514.txt,puzzles/medium/medium_23.txt,medium_23.txt,Medium,UCS,True,13,48746,50686.421875,5.6950948960000005
+results/medium_18_Astar_20260411_203907.txt,puzzles/medium/medium_18.txt,medium_18.txt,Medium,A*,True,19,20,60.328125,0.011983426999904623
+results/hard_25_WAstar_W_1_5_20260411_220822.txt,puzzles/hard/hard_25.txt,hard_25.txt,Hard,WA* (W=1.5),True,63,64,1020.515625,0.051421407999896473
+results/easy_2_IDDFS_20260411_180332.txt,puzzles/easy/easy_2.txt,easy_2.txt,Easy,IDDFS,True,3,34,4.890625,0.0007012769929133356
+results/easy_13_Astar_20260411_180759.txt,puzzles/easy/easy_13.txt,easy_13.txt,Easy,A*,True,14,31,53.78125,0.008517890993971378
+results/easy_18_UCS_20260411_183019.txt,puzzles/easy/easy_18.txt,easy_18.txt,Easy,UCS,True,13,16514,10430.46875,2.1805440810130676
+results/medium_23_WAstar_W_1_5_20260411_203616.txt,puzzles/medium/medium_23.txt,medium_23.txt,Medium,WA* (W=1.5),True,13,14,40.921875,0.012902346999908332
+results/medium_15_Greedy_20260411_202019.txt,puzzles/medium/medium_15.txt,medium_15.txt,Medium,Greedy,True,19,20,95.6484375,0.010441881000019748
+results/hard_10_Astar_20260411_210755.txt,puzzles/hard/hard_10.txt,hard_10.txt,Hard,A*,True,31,265,2484.765625,0.16629573800003072
+results/hard_15_WAstar_W_1_5_20260411_212005.txt,puzzles/hard/hard_15.txt,hard_15.txt,Hard,WA* (W=1.5),True,34,35,162.21875,0.01083268700000417
+results/medium_2_UCS_20260411_204733.txt,puzzles/medium/medium_2.txt,medium_2.txt,Medium,UCS,True,13,16982,10461.328125,1.7708595190001688
+results/easy_24_BFS_20260411_184003.txt,puzzles/easy/easy_24.txt,easy_24.txt,Easy,BFS,True,5,89,64.21875,0.01703189901309088
+results/hard_10_WAstar_W_1_5_20260411_210837.txt,puzzles/hard/hard_10.txt,hard_10.txt,Hard,WA* (W=1.5),True,31,32,216.5234375,0.02018359999999575
+results/easy_2_WAstar_W_1_5_20260411_180402.txt,puzzles/easy/easy_2.txt,easy_2.txt,Easy,WA* (W=1.5),True,3,4,4.8125,0.0007772079989081249
+results/hard_18_Greedy_20260411_221912.txt,puzzles/hard/hard_18.txt,hard_18.txt,Hard,Greedy,True,29,30,275.421875,0.013380503999997018
+results/medium_7_Astar_20260411_202654.txt,puzzles/medium/medium_7.txt,medium_7.txt,Medium,A*,True,16,17,48.3125,0.006875081999965005
+results/hard_15_DFS_20260411_212045.txt,puzzles/hard/hard_15.txt,hard_15.txt,Hard,DFS,True,200,273,1862.8046875,0.0461774820000187
+results/easy_15_UCS_20260411_184417.txt,puzzles/easy/easy_15.txt,easy_15.txt,Easy,UCS,True,7,905,640.65625,0.11268243100494146
+results/medium_14_Greedy_20260411_195351.txt,puzzles/medium/medium_14.txt,medium_14.txt,Medium,Greedy,True,16,17,43.71875,0.006861072994070128
+results/easy_21_UCS_20260411_184653.txt,puzzles/easy/easy_21.txt,easy_21.txt,Easy,UCS,True,11,2136,632.4765625,0.1815355019934941
+results/hard_19_Astar_20260411_214128.txt,puzzles/hard/hard_19.txt,hard_19.txt,Hard,A*,True,31,32,127.7578125,0.012099019999823213
+results/medium_22_Greedy_20260411_201552.txt,puzzles/medium/medium_22.txt,medium_22.txt,Medium,Greedy,True,16,17,60.21875,0.005858169000021007
+results/medium_14_BFS_20260411_194944.txt,puzzles/medium/medium_14.txt,medium_14.txt,Medium,BFS,True,16,34617,37986.8359375,3.088919314002851
+results/easy_12_DFS_20260409_211440.txt,puzzles/easy/easy_12.txt,easy_12.txt,Easy,DFS,True,45,46,129.6484375,0.004844052999999349
+results/easy_22_BFS_20260411_181129.txt,puzzles/easy/easy_22.txt,easy_22.txt,Easy,BFS,True,16,7437,5383.921875,1.0985029820003547
+results/hard_15_Astar_20260411_211924.txt,puzzles/hard/hard_15.txt,hard_15.txt,Hard,A*,True,32,37,156.0546875,0.011436941999988903
+results/medium_15_DFS_20260411_201827.txt,puzzles/medium/medium_15.txt,medium_15.txt,Medium,DFS,True,84,85,367.7421875,0.013347121999970568
+results/hard_15_Greedy_20260411_211845.txt,puzzles/hard/hard_15.txt,hard_15.txt,Hard,Greedy,True,34,35,189.4609375,0.01138150899998891
+results/medium_22_BFS_20260411_201456.txt,puzzles/medium/medium_22.txt,medium_22.txt,Medium,BFS,True,16,30111,34976.265625,2.7534249770000088
+results/hard_4_DFS_20260411_212819.txt,puzzles/hard/hard_4.txt,hard_4.txt,Hard,DFS,True,98,132,613.5625,0.022328583000103208
+results/easy_24_DFS_20260411_184010.txt,puzzles/easy/easy_24.txt,easy_24.txt,Easy,DFS,True,21,22,23.15625,0.004426928993780166
+results/easy_2_DFS_20260411_180317.txt,puzzles/easy/easy_2.txt,easy_2.txt,Easy,DFS,True,9,10,16.4140625,0.0006289260054472834
+results/hard_25_DFS_20260411_220940.txt,puzzles/hard/hard_25.txt,hard_25.txt,Hard,DFS,True,200,14188,21542.046875,1.0523542099999759
+results/easy_13_WAstar_W_1_5_20260411_180814.txt,puzzles/easy/easy_13.txt,easy_13.txt,Easy,WA* (W=1.5),True,15,16,24.65625,0.00525325900525786
+results/easy_24_UCS_20260411_184047.txt,puzzles/easy/easy_24.txt,easy_24.txt,Easy,UCS,True,5,157,86.8828125,0.01105458200618159
+results/medium_2_WAstar_W_1_5_20260411_204946.txt,puzzles/medium/medium_2.txt,medium_2.txt,Medium,WA* (W=1.5),True,13,14,27.140625,0.00919778800016502
+results/medium_13_UCS_20260411_204241.txt,puzzles/medium/medium_13.txt,medium_13.txt,Medium,UCS,True,16,61518,49721.0234375,7.260368389000178
+results/hard_22_Astar_20260411_213119.txt,puzzles/hard/hard_22.txt,hard_22.txt,Hard,A*,True,55,63,509.796875,0.028013843999815435
+results/easy_2_BFS_20260411_180257.txt,puzzles/easy/easy_2.txt,easy_2.txt,Easy,BFS,True,3,18,23.484375,0.0013683180004591122
+results/hard_4_Astar_20260411_212645.txt,puzzles/hard/hard_4.txt,hard_4.txt,Hard,A*,True,35,44,287.2421875,0.022073159000001397
+results/easy_12_UCS_20260409_211408.txt,puzzles/easy/easy_12.txt,easy_12.txt,Easy,UCS,True,9,3169,2784.453125,0.16307279200000835
+results/medium_7_UCS_20260411_202609.txt,puzzles/medium/medium_7.txt,medium_7.txt,Medium,UCS,True,16,60821,48675.375,6.040871318999962
+results/medium_22_WAstar_W_1_5_20260411_205135.txt,puzzles/medium/medium_22.txt,medium_22.txt,Medium,WA* (W=1.5),True,16,17,100.3671875,0.005931666999913432
+results/easy_22_UCS_20260411_181527.txt,puzzles/easy/easy_22.txt,easy_22.txt,Easy,UCS,True,16,19128,6765.71875,1.5342240649915766
+results/easy_18_Greedy_20260411_183036.txt,puzzles/easy/easy_18.txt,easy_18.txt,Easy,Greedy,True,13,14,31.453125,0.008005922005395405
+results/medium_21_Astar_20260411_200233.txt,puzzles/medium/medium_21.txt,medium_21.txt,Medium,A*,True,29,30,171.5859375,0.0430582749977475
+results/hard_19_Greedy_20260411_214033.txt,puzzles/hard/hard_19.txt,hard_19.txt,Hard,Greedy,True,31,32,113.96875,0.010499634000098013
+results/medium_20_WAstar_W_1_5_20260411_203243.txt,puzzles/medium/medium_20.txt,medium_20.txt,Medium,WA* (W=1.5),True,25,26,126.8125,0.018067757000153506
+results/easy_9_WAstar_W_1_5_20260411_183933.txt,puzzles/easy/easy_9.txt,easy_9.txt,Easy,WA* (W=1.5),True,7,8,10.9375,0.0035972990008303896
+results/hard_20_Astar_20260411_205502.txt,puzzles/hard/hard_20.txt,hard_20.txt,Hard,A*,True,44,51,323.7421875,0.024738669999806007
+results/hard_20_DFS_20260411_210302.txt,puzzles/hard/hard_20.txt,hard_20.txt,Hard,DFS,True,108,121,703.0,0.017212350000008314
+results/hard_4_Greedy_20260411_212559.txt,puzzles/hard/hard_4.txt,hard_4.txt,Hard,Greedy,True,35,36,236.90625,0.019589556000028097
+results/hard_22_WAstar_W_1_5_20260411_213246.txt,puzzles/hard/hard_22.txt,hard_22.txt,Hard,WA* (W=1.5),True,55,56,461.9609375,0.026682758000106332
+results/hard_24_Greedy_20260411_215729.txt,puzzles/hard/hard_24.txt,hard_24.txt,Hard,Greedy,True,71,72,1439.0703125,0.062220485000125336
+results/hard_10_Greedy_20260411_210720.txt,puzzles/hard/hard_10.txt,hard_10.txt,Hard,Greedy,True,31,32,219.46875,0.01913896000002069
+results/easy_22_Astar_20260411_182006.txt,puzzles/easy/easy_22.txt,easy_22.txt,Easy,A*,True,16,65,107.3125,0.018845448998035863
+results/medium_22_DFS_20260411_201326.txt,puzzles/medium/medium_22.txt,medium_22.txt,Medium,DFS,True,75,76,299.3046875,0.008717962999995166
+results/easy_24_WAstar_W_1_5_20260411_184110.txt,puzzles/easy/easy_24.txt,easy_24.txt,Easy,WA* (W=1.5),True,6,7,7.484375,0.0013549239956773818
+results/medium_23_BFS_20260411_203336.txt,puzzles/medium/medium_23.txt,medium_23.txt,Medium,BFS,True,13,27444,36362.2109375,4.5669356490000155
+results/hard_20_Greedy_20260411_205412.txt,puzzles/hard/hard_20.txt,hard_20.txt,Hard,Greedy,True,44,45,328.0234375,0.028213863000019046
+results/easy_7_BFS_20260411_182112.txt,puzzles/easy/easy_7.txt,easy_7.txt,Easy,BFS,True,10,1516,1243.8671875,0.2407779240020318
+results/easy_21_Greedy_20260411_184704.txt,puzzles/easy/easy_21.txt,easy_21.txt,Easy,Greedy,True,11,12,13.6328125,0.005086874996777624
+results/easy_9_Astar_20260411_183924.txt,puzzles/easy/easy_9.txt,easy_9.txt,Easy,A*,True,7,8,10.8828125,0.004276805993868038
+results/easy_9_IDDFS_20260411_183831.txt,puzzles/easy/easy_9.txt,easy_9.txt,Easy,IDDFS,True,7,15159,107.96875,0.7243356160033727
+results/easy_24_Greedy_20260411_184056.txt,puzzles/easy/easy_24.txt,easy_24.txt,Easy,Greedy,True,6,7,7.453125,0.0024453789956169203
+results/hard_13_Greedy_20260411_214620.txt,puzzles/hard/hard_13.txt,hard_13.txt,Hard,Greedy,True,28,29,201.828125,0.016424835999941934
+results/hard_25_Greedy_20260411_220603.txt,puzzles/hard/hard_25.txt,hard_25.txt,Hard,Greedy,True,63,64,1031.1015625,0.048153166999782115
+results/medium_23_DFS_20260411_203352.txt,puzzles/medium/medium_23.txt,medium_23.txt,Medium,DFS,True,65,66,199.1484375,0.013685958999985814
+results/hard_18_Astar_20260411_221946.txt,puzzles/hard/hard_18.txt,hard_18.txt,Hard,A*,True,29,30,261.0078125,0.012883157000032952
+results/medium_23_Greedy_20260411_203539.txt,puzzles/medium/medium_23.txt,medium_23.txt,Medium,Greedy,True,13,14,35.78125,0.008063314999844806
+results/medium_7_WAstar_W_1_5_20260411_202713.txt,puzzles/medium/medium_7.txt,medium_7.txt,Medium,WA* (W=1.5),True,16,17,50.3046875,0.005993799000066247
+results/medium_14_DFS_20260411_195016.txt,puzzles/medium/medium_14.txt,medium_14.txt,Medium,DFS,True,147,148,917.5546875,0.022135029998025857
+results/easy_24_Astar_20260411_184105.txt,puzzles/easy/easy_24.txt,easy_24.txt,Easy,A*,True,5,10,9.0546875,0.0038517639914061874
+results/easy_2_UCS_20260411_180342.txt,puzzles/easy/easy_2.txt,easy_2.txt,Easy,UCS,True,3,23,23.6328125,0.0016166150016942993
+results/medium_7_BFS_20260411_202149.txt,puzzles/medium/medium_7.txt,medium_7.txt,Medium,BFS,True,16,29128,32333.0703125,4.829358372999991
+results/easy_15_Greedy_20260411_184427.txt,puzzles/easy/easy_15.txt,easy_15.txt,Easy,Greedy,True,7,8,11.28125,0.004388269997434691
+results/easy_18_WAstar_W_1_5_20260411_183220.txt,puzzles/easy/easy_18.txt,easy_18.txt,Easy,WA* (W=1.5),True,13,14,28.0859375,0.010933423996903002
+results/hard_24_WAstar_W_1_5_20260411_220018.txt,puzzles/hard/hard_24.txt,hard_24.txt,Hard,WA* (W=1.5),True,71,72,1414.015625,0.06448517400031051
+results/easy_22_Greedy_20260411_181615.txt,puzzles/easy/easy_22.txt,easy_22.txt,Easy,Greedy,True,16,17,26.1015625,0.006792439002310857
+results/medium_14_Astar_20260411_195411.txt,puzzles/medium/medium_14.txt,medium_14.txt,Medium,A*,True,16,17,49.875,0.008107974004815333
+results/easy_12_IDDFS_20260409_211428.txt,puzzles/easy/easy_12.txt,easy_12.txt,Easy,IDDFS,True,9,320974,178.5546875,7.43610490399999
+results/medium_14_WAstar_W_1_5_20260411_195521.txt,puzzles/medium/medium_14.txt,medium_14.txt,Medium,WA* (W=1.5),True,16,17,49.8984375,0.008562197996070608
+results/easy_7_Greedy_20260411_182343.txt,puzzles/easy/easy_7.txt,easy_7.txt,Easy,Greedy,True,11,12,14.3828125,0.005144533002749085
+results/hard_25_Astar_20260411_220713.txt,puzzles/hard/hard_25.txt,hard_25.txt,Hard,A*,True,62,67,1017.109375,0.04941261499971006
+results/easy_22_WAstar_W_1_5_20260411_182024.txt,puzzles/easy/easy_22.txt,easy_22.txt,Easy,WA* (W=1.5),True,16,17,27.390625,0.00713250100670848
+results/hard_19_WAstar_W_1_5_20260411_214213.txt,puzzles/hard/hard_19.txt,hard_19.txt,Hard,WA* (W=1.5),True,31,32,132.4296875,0.011726394999868717
+results/easy_18_BFS_20260411_182837.txt,puzzles/easy/easy_18.txt,easy_18.txt,Easy,BFS,True,13,7557,7048.6640625,1.5312659429910127
+results/medium_22_Astar_20260411_201611.txt,puzzles/medium/medium_22.txt,medium_22.txt,Medium,A*,True,16,17,63.34375,0.00763715300001877
+results/test_results.txt,puzzles/easy_1.txt,easy_1.txt,Unknown,BFS,,3,42,,0.004
+results/medium_20_DFS_20260411_202750.txt,puzzles/medium/medium_20.txt,medium_20.txt,Medium,DFS,True,200,9848,9382.0546875,1.0428264639999725
+results/easy_7_WAstar_W_1_5_20260411_182422.txt,puzzles/easy/easy_7.txt,easy_7.txt,Easy,WA* (W=1.5),True,11,12,15.421875,0.005013841000618413
+results/medium_20_Astar_20260411_203215.txt,puzzles/medium/medium_20.txt,medium_20.txt,Medium,A*,True,25,26,123.0390625,0.025985718999891105
+results/easy_21_WAstar_W_1_5_20260411_184736.txt,puzzles/easy/easy_21.txt,easy_21.txt,Easy,WA* (W=1.5),True,11,12,14.9140625,0.005521772996871732
+results/easy_15_DFS_20260411_184316.txt,puzzles/easy/easy_15.txt,easy_15.txt,Easy,DFS,True,43,44,93.203125,0.009780166990822181
+results/easy_9_DFS_20260411_183743.txt,puzzles/easy/easy_9.txt,easy_9.txt,Easy,DFS,True,42,43,82.640625,0.007050724001601338
+results/medium_2_Astar_20260411_204807.txt,puzzles/medium/medium_2.txt,medium_2.txt,Medium,A*,True,13,14,25.7265625,0.009466513999996096
+results/easy_13_BFS_20260411_180452.txt,puzzles/easy/easy_13.txt,easy_13.txt,Easy,BFS,True,13,7247,6773.8515625,0.5722239250026178
+results/easy_12_Astar_20260409_211556.txt,puzzles/easy/easy_12.txt,easy_12.txt,Easy,A*,True,9,10,24.453125,0.002164854000000105
+results/medium_13_WAstar_W_1_5_20260411_204348.txt,puzzles/medium/medium_13.txt,medium_13.txt,Medium,WA* (W=1.5),True,16,17,42.6796875,0.009436040000082357
+results/medium_7_Greedy_20260411_202632.txt,puzzles/medium/medium_7.txt,medium_7.txt,Medium,Greedy,True,16,17,40.2890625,0.00676063499997781
+results/medium_21_DFS_20260411_195740.txt,puzzles/medium/medium_21.txt,medium_21.txt,Medium,DFS,True,200,2051,3239.015625,0.22849206300452352
+results/easy_15_IDDFS_20260411_184408.txt,puzzles/easy/easy_15.txt,easy_15.txt,Easy,IDDFS,True,7,15609,100.6875,0.8368908069969621
+results/easy_13_DFS_20260411_180513.txt,puzzles/easy/easy_13.txt,easy_13.txt,Easy,DFS,True,88,89,317.7109375,0.013221450994024053
+results/medium_20_Greedy_20260411_203142.txt,puzzles/medium/medium_20.txt,medium_20.txt,Medium,Greedy,True,25,26,104.046875,0.017019573000197852
+results/medium_22_UCS_20260411_201530.txt,puzzles/medium/medium_22.txt,medium_22.txt,Medium,UCS,True,16,61518,49793.8671875,3.7665277879999906
+results/hard_22_Greedy_20260411_213019.txt,puzzles/hard/hard_22.txt,hard_22.txt,Hard,Greedy,True,55,56,458.5703125,0.02525534799997331
+results/medium_14_UCS_20260411_195330.txt,puzzles/medium/medium_14.txt,medium_14.txt,Medium,UCS,True,16,72634,54242.8984375,5.902849913996761
+results/hard_4_WAstar_W_1_5_20260411_212728.txt,puzzles/hard/hard_4.txt,hard_4.txt,Hard,WA* (W=1.5),True,35,36,250.78125,0.01974851799991484
+results/easy_21_BFS_20260411_184520.txt,puzzles/easy/easy_21.txt,easy_21.txt,Easy,BFS,True,11,776,514.328125,0.1165252749924548
+results/medium_13_Astar_20260411_204327.txt,puzzles/medium/medium_13.txt,medium_13.txt,Medium,A*,True,16,17,40.6875,0.008160275000136608
+results/medium_21_WAstar_W_1_5_20260411_200307.txt,puzzles/medium/medium_21.txt,medium_21.txt,Medium,WA* (W=1.5),True,29,30,174.609375,0.06847143199411221
+results/easy_15_BFS_20260411_184307.txt,puzzles/easy/easy_15.txt,easy_15.txt,Easy,BFS,True,7,443,446.546875,0.07501033900189213
+results/medium_2_BFS_20260411_204428.txt,puzzles/medium/medium_2.txt,medium_2.txt,Medium,BFS,True,13,7665,7019.6484375,1.302901262999967
+results/easy_18_Astar_20260411_183055.txt,puzzles/easy/easy_18.txt,easy_18.txt,Easy,A*,True,13,14,28.140625,0.010408715999801643
+results/medium_2_DFS_20260411_204443.txt,puzzles/medium/medium_2.txt,medium_2.txt,Medium,DFS,True,140,141,575.6875,0.040115733000220644
+results/medium_15_Astar_20260411_202043.txt,puzzles/medium/medium_15.txt,medium_15.txt,Medium,A*,True,19,20,96.4765625,0.0088795949999394
+results/easy_9_Greedy_20260411_183911.txt,puzzles/easy/easy_9.txt,easy_9.txt,Easy,Greedy,True,7,8,10.71875,0.004185049998341128
+results/hard_10_DFS_20260411_210520.txt,puzzles/hard/hard_10.txt,hard_10.txt,Hard,DFS,True,106,107,737.8828125,0.021772859999998673
+results/easy_13_Greedy_20260411_180732.txt,puzzles/easy/easy_13.txt,easy_13.txt,Easy,Greedy,True,15,16,20.5546875,0.00539563198981341
+results/easy_9_UCS_20260411_183841.txt,puzzles/easy/easy_9.txt,easy_9.txt,Easy,UCS,True,7,866,647.390625,0.09037875500507653
+results/hard_13_Astar_20260411_214652.txt,puzzles/hard/hard_13.txt,hard_13.txt,Hard,A*,True,28,29,190.65625,0.017295442999966326
+results/easy_15_WAstar_W_1_5_20260411_184500.txt,puzzles/easy/easy_15.txt,easy_15.txt,Easy,WA* (W=1.5),True,7,8,11.5,0.004647159003070556
+results/easy_18_DFS_20260411_182854.txt,puzzles/easy/easy_18.txt,easy_18.txt,Easy,DFS,True,66,67,188.453125,0.009758150990819559
+results/hard_20_WAstar_W_1_5_20260411_205555.txt,puzzles/hard/hard_20.txt,hard_20.txt,Hard,WA* (W=1.5),True,44,45,296.6171875,0.03897144499978822
+results/easy_2_Astar_20260411_180355.txt,puzzles/easy/easy_2.txt,easy_2.txt,Easy,A*,True,3,4,5.0546875,0.000581514002988115
+results/easy_7_UCS_20260411_182312.txt,puzzles/easy/easy_7.txt,easy_7.txt,Easy,UCS,True,10,3527,1803.6953125,0.39785071898950264
+results/medium_23_Astar_20260411_203559.txt,puzzles/medium/medium_23.txt,medium_23.txt,Medium,A*,True,13,14,39.109375,0.01231791100008195
+results/hard_19_DFS_20260411_214314.txt,puzzles/hard/hard_19.txt,hard_19.txt,Hard,DFS,True,108,109,398.9765625,0.013838157000009232
+results/easy_21_Astar_20260411_184722.txt,puzzles/easy/easy_21.txt,easy_21.txt,Easy,A*,True,11,36,32.5078125,0.01248744799522683
+results/easy_12_WAstar_W_1_5_20260409_211610.txt,puzzles/easy/easy_12.txt,easy_12.txt,Easy,WA* (W=1.5),True,9,10,25.296875,0.0026544919999764716
+results/medium_18_WAstar_W_1_5_20260411_203933.txt,puzzles/medium/medium_18.txt,medium_18.txt,Medium,WA* (W=1.5),True,19,20,63.09375,0.011965056999997614
+results/medium_13_Greedy_20260411_204302.txt,puzzles/medium/medium_13.txt,medium_13.txt,Medium,Greedy,True,16,17,37.0859375,0.007323339000095075
+results/easy_7_Astar_20260411_182407.txt,puzzles/easy/easy_7.txt,easy_7.txt,Easy,A*,True,11,35,37.4140625,0.012214462010888383
+results/hard_24_Astar_20260411_215848.txt,puzzles/hard/hard_24.txt,hard_24.txt,Hard,A*,True,71,72,1396.8125,0.05995120599982329
+results/medium_18_DFS_20260411_203659.txt,puzzles/medium/medium_18.txt,medium_18.txt,Medium,DFS,True,84,85,294.765625,0.033970734999911656
+results/medium_21_Greedy_20260411_200137.txt,puzzles/medium/medium_21.txt,medium_21.txt,Medium,Greedy,True,29,30,148.5,0.030461501999525353
+results/hard_18_DFS_20260411_222118.txt,puzzles/hard/hard_18.txt,hard_18.txt,Hard,DFS,True,109,110,636.640625,0.016683091000231798
+results/hard_13_DFS_20260411_214809.txt,puzzles/hard/hard_13.txt,hard_13.txt,Hard,DFS,True,180,181,1098.734375,0.028388233000441687
+results/easy_12_BFS_20260409_211352.txt,puzzles/easy/easy_12.txt,easy_12.txt,Easy,BFS,True,9,1578,1874.9296875,0.12595121100000028
+results/easy_22_DFS_20260411_181149.txt,puzzles/easy/easy_22.txt,easy_22.txt,Easy,DFS,True,171,172,736.4609375,0.03240450899465941
+results/easy_12_Greedy_20260409_211544.txt,puzzles/easy/easy_12.txt,easy_12.txt,Easy,Greedy,True,9,10,25.46875,0.0019504910000023301
+results/medium_2_Greedy_20260411_204748.txt,puzzles/medium/medium_2.txt,medium_2.txt,Medium,Greedy,True,13,14,24.4765625,0.008638458999939758
+results/easy_13_UCS_20260411_180714.txt,puzzles/easy/easy_13.txt,easy_13.txt,Easy,UCS,True,13,15483,10105.7734375,1.059834914005478
+results/medium_13_BFS_20260411_204050.txt,puzzles/medium/medium_13.txt,medium_13.txt,Medium,BFS,True,16,30111,34903.8359375,5.595566768000026

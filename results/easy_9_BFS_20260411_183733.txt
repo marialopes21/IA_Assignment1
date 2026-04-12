@@ -1,0 +1,29 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/easy/easy_9.txt
+Algorithm    : BFS
+
+Initial State:
+  Tube 0: red red blue green
+  Tube 1: blue blue green red
+  Tube 2: green green red blue
+  Tube 3: (empty)
+  Tube 4: (empty)
+
+Performance:
+  time_seconds          : 0.0846066369995242
+  states_explored       : 424
+  max_memory_kb         : 446.078125
+  solution_length       : 7
+  solved                : True
+
+Solution (7 moves):
+  Step   1: Pour tube 0 → tube 3
+  Step   2: Pour tube 2 → tube 0
+  Step   3: Pour tube 1 → tube 2
+  Step   4: Pour tube 1 → tube 3
+  Step   5: Pour tube 0 → tube 1
+  Step   6: Pour tube 2 → tube 0
+  Step   7: Pour tube 2 → tube 3

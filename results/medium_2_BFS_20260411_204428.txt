@@ -1,0 +1,36 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/medium/medium_2.txt
+Algorithm    : BFS
+
+Initial State:
+  Tube 0: red green blue yellow
+  Tube 1: yellow blue green red
+  Tube 2: green yellow red blue
+  Tube 3: blue red yellow green
+  Tube 4: (empty)
+  Tube 5: (empty)
+
+Performance:
+  time_seconds          : 1.302901262999967
+  states_explored       : 7665
+  max_memory_kb         : 7019.6484375
+  solution_length       : 13
+  solved                : True
+
+Solution (13 moves):
+  Step   1: Pour tube 0 → tube 4
+  Step   2: Pour tube 2 → tube 0
+  Step   3: Pour tube 1 → tube 2
+  Step   4: Pour tube 3 → tube 1
+  Step   5: Pour tube 3 → tube 4
+  Step   6: Pour tube 2 → tube 3
+  Step   7: Pour tube 2 → tube 4
+  Step   8: Pour tube 1 → tube 2
+  Step   9: Pour tube 0 → tube 1
+  Step  10: Pour tube 0 → tube 2
+  Step  11: Pour tube 3 → tube 0
+  Step  12: Pour tube 1 → tube 3
+  Step  13: Pour tube 1 → tube 4

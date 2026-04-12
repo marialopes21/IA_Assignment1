@@ -1,0 +1,23 @@
+==================================================
+WATER SORT - RESULTS
+==================================================
+
+Puzzle file  : puzzles/hard/hard_23.txt
+Algorithm    : Greedy
+
+Initial State:
+  Tube 0: red blue green yellow purple orange cyan pink
+  Tube 1: red blue green yellow purple orange cyan pink
+  Tube 2: red blue green yellow purple orange cyan pink
+  Tube 3: red blue green yellow purple orange cyan pink
+  Tube 4: (empty)
+  Tube 5: (empty)
+
+Performance:
+  time_seconds          : 0.12718651500000533
+  states_explored       : 1380
+  max_memory_kb         : 1214.8828125
+  solution_length       : 0
+  solved                : False
+
+No solution found.
