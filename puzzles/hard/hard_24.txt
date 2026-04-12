@@ -1,9 +1,14 @@
-# Hard puzzle 24 - capacity 8, 10 colors
+# Hard puzzle 24 - capacity 8, 10 colors, valid
 capacity=8
 red blue green yellow purple orange cyan pink
-lime teal red blue green yellow purple orange
-cyan pink lime teal red blue green yellow
-purple orange cyan pink lime teal red blue
+blue green yellow purple orange cyan pink lime
 green yellow purple orange cyan pink lime teal
+yellow purple orange cyan pink lime teal red
+purple orange cyan pink lime teal red blue
+orange cyan pink lime teal red blue green
+cyan pink lime teal red blue green yellow
+pink lime teal red blue green yellow purple
+lime teal red blue green yellow purple orange
+teal red blue green yellow purple orange cyan
 empty
 empty

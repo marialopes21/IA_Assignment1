@@ -1,11 +1,14 @@
-# Hard puzzle 21 - capacity 6, 9 colors
+# Hard puzzle 21 - capacity 6, 9 colors, more tubes, valid
 capacity=6
 red blue green yellow purple orange
-cyan pink lime red blue green
+blue green yellow purple orange cyan
+green yellow purple orange cyan pink
 yellow purple orange cyan pink lime
-red blue green yellow purple orange
+purple orange cyan pink lime red
+orange cyan pink lime red blue
 cyan pink lime red blue green
-yellow purple orange cyan pink lime
+pink lime red blue green yellow
+lime red blue green yellow purple
 empty
 empty
 empty

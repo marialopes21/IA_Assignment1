@@ -1,11 +1,11 @@
-# Hard puzzle 18 - hard, capacity 5, 7 colors
+# Hard puzzle 18 - hard, capacity 5, 7 colors, valid
 capacity=5
 red blue green yellow purple
 blue green yellow purple orange
 green yellow purple orange cyan
-yellow purple orange cyan pink
-purple orange cyan pink red
-orange cyan pink red blue
-cyan pink red blue green
+yellow purple orange cyan red
+purple orange cyan red blue
+orange cyan red blue green
+cyan red blue green yellow
 empty
 empty
