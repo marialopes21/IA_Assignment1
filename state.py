@@ -1,32 +1,13 @@
-"""
-state.py - Water Sort Puzzle
-
-A WaterSortState holds a list of tubes.
-Each tube is a list of color strings, where:
-  - Index 0 = BOTTOM of the tube
-  - Index -1 = TOP of the tube (poured from/to here)
-
-Example tube (capacity 4):
-  ['red', 'blue', 'blue', 'red']
-   ^bottom                 ^top
-"""
-
 from __future__ import annotations
 from typing import Optional
 
-
-
 TUBE_CAPACITY = 4  
 
-
 class WaterSortState:
-
     def __init__(self, tubes: list[list[str]], capacity: int = TUBE_CAPACITY):
-        # Store as tuple of tuples for hashability & immutability
         self.tubes = tuple(tuple(t) for t in tubes)
         self.capacity = capacity
         self.num_tubes = len(self.tubes)
-
 
     def tube_top(self, idx: int) -> Optional[str]:
         t = self.tubes[idx]
@@ -60,8 +41,6 @@ class WaterSortState:
             return True
         return False
 
-    # Move logic 
-
     def is_valid_move(self, src: int, dst: int) -> bool:
         if src == dst:
             return False
@@ -87,7 +66,7 @@ class WaterSortState:
     def apply_move(self, src: int, dst: int) -> "WaterSortState":
         assert self.is_valid_move(src, dst), f"Invalid move: {src} → {dst}"
 
-        tubes = [list(t) for t in self.tubes]  # mutable copy
+        tubes = [list(t) for t in self.tubes]
 
         pour_color = tubes[src][-1]
         amount = min(self.tube_top_count(src), self.tube_free_space(dst))
@@ -98,13 +77,8 @@ class WaterSortState:
 
         return WaterSortState(tubes, self.capacity)
 
-    # Win/loss detection
-
     def is_goal(self) -> bool:
-        """The puzzle is solved when every tube is complete."""
         return all(self.is_tube_complete(i) for i in range(self.num_tubes))
-
-    # Hashing & equality (needed for search)
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, WaterSortState):
@@ -113,8 +87,6 @@ class WaterSortState:
 
     def __hash__(self) -> int:
         return hash(self.tubes)
-
-    # Display 
 
     def __repr__(self) -> str:
         lines = []
@@ -125,14 +97,7 @@ class WaterSortState:
         return "WaterSortState:\n" + "\n".join(lines)
 
     def display(self) -> None:
-        """Pretty-print the current state to the console."""
         print(self)
 
-    # Cost 
-
     def move_cost(self, src: int, dst: int) -> int:
-        """
-        Cost of a move. Default = 1 (uniform cost).
-        Override for weighted variants.
-        """
         return 1

@@ -1,31 +1,17 @@
 """
 heuristics.py - Heuristic Functions for Water Sort Puzzle
-
-A heuristic h(state) estimates the cost to reach the goal from a given state.
-For A* to be optimal, the heuristic must be ADMISSIBLE:
-  - Never overestimates the true cost to reach the goal.
-
-Heuristics 1 - Number of tubes not yet complete
-Heuristics 2 - Number of “color blocks” across all tubes minus number of colors
-(counts how many pours are still needed at minimum)
-Heuristics 3 - Count of color discontinuities within tubes (e.g. if a tube has R,B,R
-that's 2 discontinuities requiring at least 2 moves)
 """
 
 from state import WaterSortState
 
-
 # H1 — Unsolved Tubes
-
 def h1_unsolved_tubes(state: WaterSortState) -> int:
     return sum(
         1 for i in range(state.num_tubes)
         if not state.is_tube_complete(i)
     )
 
-
 # H2 — Color Misplacement
-
 def h2_color_misplacement(state: WaterSortState) -> int:
     count = 0
     for i in range(state.num_tubes):
@@ -37,9 +23,7 @@ def h2_color_misplacement(state: WaterSortState) -> int:
         count += len(tube)
     return count
 
-
 # H3 — Combined Heuristic 
-
 def h3_combined(state: WaterSortState) -> int:
     total = 0
 
@@ -64,15 +48,12 @@ def h3_combined(state: WaterSortState) -> int:
 
     return total
 
-
-# Heuristic registry
-
+# Heuristic
 HEURISTICS = {
     "h1_unsolved_tubes"   : h1_unsolved_tubes,
     "h2_color_misplacement": h2_color_misplacement,
     "h3_combined"         : h3_combined,
 }
-
 
 def get_heuristic(name: str):
     if name not in HEURISTICS:
