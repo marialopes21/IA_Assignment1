@@ -71,3 +71,8 @@ File responsible for metrics testing
 ```bash 
 python test_metrics.py
 ```
+## results.py
+File responsible for parsing the solver result text files, extracting performance metrics, and generating CSV summary tables for comparing algorithms across puzzle difficulties. 
+```bash 
+python results.py
+```
